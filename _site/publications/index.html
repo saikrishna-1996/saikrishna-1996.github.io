@@ -46,12 +46,11 @@
         <!-- About -->
         <a class="page-link" href="http://localhost:4000/">about</a>
 
-        <!-- Blog -->
+        <!-- Blog 
         <a class="page-link" href="http://localhost:4000/blog/">blog</a>
+        -->
 
         <!-- Pages -->
-        
-          
         
           
         
@@ -71,11 +70,9 @@
         
           
         
-          
-        
 
         <!-- CV link -->
-        <!-- <a class="page-link" href="http://localhost:4000/assets/pdf/CV.pdf">vitae</a> -->
+        <a class="page-link" href="http://localhost:4000/assets/pdf/CV.pdf">CV</a>
 
       </div>
     </nav>
@@ -97,17 +94,166 @@
 
   <article class="post-content publications clearfix">
     
-<h3 class="year">1956</h3>
-<ol class="bibliography"></ol>
+<h3 class="year">2017</h3>
+<ol class="bibliography"><li>
 
-<h3 class="year">1950</h3>
-<ol class="bibliography"></ol>
+<div id="icra2017deep">
+  
+    <span class="title">Reconstructing Vehicles from a Single Image: Shape Priors for Road
+               Scene Understanding</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                <a href="https://krrish94.github.io/" target="_blank">Krishna Murthy, J.</a>, 
+              
+            
+          
+        
+      
+        
+          
+            
+              <em>Sai Krishna, G.V.</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Chhaya, Falak,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Madhava Krishna, K.
+              
+            
+          
+        
+      
+    </span>
 
-<h3 class="year">1935</h3>
-<ol class="bibliography"></ol>
+    <span class="periodical">
+    
+      <em>ICRA</em>
+    
+    
+      2017
+    
+    </span>
+  
 
-<h3 class="year">1905</h3>
-<ol class="bibliography"></ol>
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+    [<a href="http://arxiv.org/abs/1609.09468" target="_blank">arXiv</a>]
+  
+  
+  
+  
+  
+    [<a href="http://localhost:4000/assets/pdf/2017icra_poster.pdf" target="_blank">Poster</a>]
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>We present an approach for reconstructing vehicles from a single (RGB) image, in the context of autonomous driving. Though the problem appears to be ill-posed, we demonstrate that prior knowledge about how 3D shapes of vehicles project to an image can be used to reason about the reverse process, i.e., how shapes (back-)project from 2D to 3D. We encode this knowledge in shape priors, which are learnt over a small keypoint-annotated dataset. We then formulate a shape-aware adjustment problem that uses the learnt shape priors to recover the 3D pose and shape of a query object from an image. For shape representation and inference, we leverage recent successes of Convolutional Neural Networks (CNNs) for the task of object and keypoint localization, and train a novel cascaded fully-convolutional architecture to localize vehicle keypoints in images. The shape-aware adjustment then robustly recovers shape (3D locations of the detected keypoints) while simultaneously filling in occluded keypoints. To tackle estimation errors incurred due to erroneously detected keypoints, we use an Iteratively Re-weighted Least Squares (IRLS) scheme for robust optimization, and as a by-product characterize noise models for each predicted keypoint. We evaluate our approach on autonomous driving benchmarks, and present superior results to existing monocular, as well as stereo approaches. </p>
+  </span>
+  
+</div>
+</li></ol>
+
+<h3 class="year">2018</h3>
+<ol class="bibliography"><li>
+
+<div id="sai2018deep">
+  
+    <span class="title">Deep Pepper: Expert Iteration based Chess agent in the Reinforcement Learning Setting</span>
+    <span class="author">
+      
+        
+          
+            
+              <em>Sai Krishna, G.V.</em>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Goyette, Kyle,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Chamseddine, Ahmad,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Considine, Breandan
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>arXiv preprint arXiv:1806.00683</em>
+    
+    
+      2018
+    
+    </span>
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1806.00683" target="_blank">arXiv</a>]
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li></ol>
 
 
   </article>
@@ -139,11 +285,6 @@
 <!-- Load Common JS -->
 <script src="http://localhost:4000/assets/js/common.js"></script>
 
-
-<!-- Load KaTeX -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
-<script src="http://localhost:4000/assets/js/katex.js"></script>
 
 
 
