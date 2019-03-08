@@ -9,8 +9,8 @@ An almost-perfect chess playing agent has been a long standing challenge in the 
 
 ***
 
-[code](https://arxiv.org/abs/1806.00683)  
+[code](https://github.com/saikrishna-1996/deep_pepper_chess)  
 
-paper: https://arxiv.org/abs/1806.00683
+[paper](https://arxiv.org/abs/1806.00683)
 
-mention on chess-programming wiki: 
+[mention on chess-programming wiki](https://www.chessprogramming.org/Deep_Learning) 
