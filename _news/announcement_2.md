@@ -9,8 +9,8 @@ An almost-perfect chess playing agent has been a long standing challenge in the 
 
 ***
 
-github link: 
+[code](https://arxiv.org/abs/1806.00683)  
 
-arXiv link:
+paper: https://arxiv.org/abs/1806.00683
 
 mention on chess-programming wiki: 
