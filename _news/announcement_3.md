@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Our Deep Active Localization paper is now on arXiv
-date: 2019-03-04
+date: 2019-03-05
 inline: false
 ---
 

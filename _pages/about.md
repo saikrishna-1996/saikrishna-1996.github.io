@@ -21,4 +21,4 @@ I am a final year Masters (by research) student at
 
 I work in the areas of Reinforcement Learning and Robotics. During my undergrad, I worked in computer vision and deep learning for robotics. My other research interests span over biologically plausible learning algorithms, cognitive-AI, generative models etc.. 
 
-When I am not doing research, I play chess (I recently became an International Master and won many International medals when I was a kid) and read physics and astronomy
+When I am not doing research, I play chess. I recently became an [International Master](http://ratings.fide.com/card.phtml?event=5028280) and won many medals in world and asian youth championships in the past) and read physics and astronomy
