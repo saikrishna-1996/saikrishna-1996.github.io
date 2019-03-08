@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+<!-- description: Materials for courses you taught. Replace this text with your description. -->
 ---
 
 During my undergraduate years, I served as a teaching assistant for the following foundational courses:

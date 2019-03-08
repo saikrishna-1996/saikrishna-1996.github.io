@@ -17,8 +17,8 @@ social: true
 ---
 
 I am a final year Masters (by research) student at 
-<a href="https://mila.quebec/en/">Montreal Institute For Learning Algorithms (MILA)</a> , advised by <a href="http://liampaull.ca/">Dr. Liam Paull</a> . I am graduating in July 2019 (I think so)
+<a href="https://mila.quebec/en/">Montreal Institute For Learning Algorithms (MILA)</a> , advised by <a href="http://liampaull.ca/">Dr. Liam Paull</a> and [Prof. Yoshua Bengio](https://mila.quebec/en/person/bengio-yoshua/). I am graduating this summer!
 
-I work in the areas of Reinforcement Learning and Robotics. During my undergrad, I worked in computer vision and deep learning for robotics. I am also curious about various topics like theory of Reinforcement Learning, biologically plausible learning algorithms, generative models etc.. 
+I work in the areas of Reinforcement Learning and Robotics. During my undergrad, I worked in computer vision and deep learning for robotics. My other research interests span over biologically plausible learning algorithms, cognitive-AI, generative models etc.. 
 
 When I am not doing research, I play chess (I recently became an International Master and won many International medals when I was a kid) and read physics and astronomy
