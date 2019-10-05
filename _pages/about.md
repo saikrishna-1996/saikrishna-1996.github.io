@@ -8,16 +8,20 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>office: 2259, Pavillon Andre Aisenstadt </p>
-    <p>2920 Ch de la Tour</p>
-    <p>Montreal, Quebec H3T 1N8</p>
+    <p>office: 6666, Saint Urbain </p>
+    <p>Mila</p>
+    <p>Montreal, Quebec</p>
 
 news: true
 social: true
 ---
 
-I am a final year Masters (by research) student at Montreal Institute For Learning Algorithms (MILA), advised by Dr. Liam Paull. I am graduating in July 2019 (I think so)
+I am working at a stealth mode start-up. More details will follow. 
 
-I work in the areas of Reinforcement Learning and Robotics. During my undergrad, I worked in computer vision and deep learning for robotics. The culture at Mila made me delve deep into various topics like theory of Reinforcement Learning, biologically plausible learning algorithms, generative models etc.. 
+I finished my Masters (by research) at Montreal Institute For Learning Algorithms (MILA), advised by Dr. Liam Paull. 
 
-When I am not doing research, I play chess (I recently became an International Master and won many International medals when I was a kid) and read physics
+I work mostly in the areas of Reinforcement Learning. During my undergrad, I worked in computer vision and deep learning for robotics. My other interests include causality, cognitive AI etc..
+
+When I am not doing research, I play chess (I recently became an International Master and won many International medals when I was a kid) and read physics.
+
+I am lazy. So, this webpage is probably outdated. 
