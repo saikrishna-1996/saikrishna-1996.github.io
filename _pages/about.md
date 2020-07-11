@@ -8,15 +8,16 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>office: 6666, Saint Urbain </p>
-    <p>Mila</p>
-    <p>Montreal, Quebec</p>
+    <p>Montreal, Canada</p>
 
 news: true
 social: true
 ---
 
-I am working at a stealth mode start-up. More details will follow. 
+I am a founding researcher at [99andBeyond](https://99andbeyond.com), researching of novel learning algorithms for 
+de novo drug design. Checkout our latest groundbreaking work, accepted at ICML2020 - 
+[[paper](https://arxiv.org/abs/2004.12485)]
+[[blog](https://99andbeyond.com/blog.html)]
 
 I finished my Masters (by research) at Montreal Institute For Learning Algorithms (MILA), advised by Dr. Liam Paull. 
 
