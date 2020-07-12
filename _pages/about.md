@@ -28,6 +28,5 @@ I am grateful for support from Mila, Université de Montréal, Arbour Foundation
 My current research interests broadly span over machine learning,
 reinforcement learning, drug discovery and robotics.
 
-When I am not doing research, I play chess (I recently became an International Master and won many International medals when I was a kid) and read physics.
+When I am not doing research, I play chess (I recently became an [International Master](https://ratings.fide.com/card.phtml?event=5028280)) and read.
 
-**Disclaimer - I am lazy. So, this webpage is probably outdated.** 
