@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Sai Krishna</strong> G V
-description: <a href="https://ai-r.com"> Senior RL Researcher at AI Redefined </a>
+description: <a href="https://www.cm-labs.com/"> Senior RL Scientist at CM Labs Simulations </a>
 
 profile:
   align: right
@@ -21,5 +21,5 @@ His groundbreaking work includes developing the world's first RL-based synthesiz
 
 During his MSc (research) in AI at the REAL lab in Mila (Quebec AI institute), Université de Montréal, he developed deep active localization published in the prestigious IEEE Robotics and Automation Letters (RA-L). He also contributed to the MapLite project, which won the 2019 IEEE RA-L Best Paper Award. His academic achievements were supported by complete tuition fee waiver (~$40K), research stipend ($44K for 2 years), and Arbour Foundation scholarship ($10K).
 
-Beyond his research contributions, Sai Krishna is an International Master in chess, ranks as a top-10 player in Canada and carries the reputation of being the most humble Canadian IM. In his previous life (circa 2005 - 2011), Sai won 3 Indian national championships and consequently won several medals in Asian, Commonwealth and World championships in his age group representing India. Since 2024, he is a Canadian citizen and plays for Canadian and Quebec chess federations. 
+Beyond his scientific contributions, Sai Krishna is an International Master in chess, ranks as a top-10 player in Canada and carries the reputation of being the most humble Canadian IM. In his previous life (circa 2005 - 2011), Sai won 3 Indian national championships and consequently won several medals in Asian, Commonwealth and World championships in his age group representing India. Since 2024, he is a Canadian citizen and plays for Canadian and Quebec chess federations. 
 
