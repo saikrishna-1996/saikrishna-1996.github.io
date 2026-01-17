@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Sai Krishna | Project 5</title>
+  <title>Sai Krishna | Chess Games PGN Files</title>
   <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
   <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/projects/5_project/">
+  <link rel="canonical" href="http://localhost:4000/assets/pgn/">
 </head>
 
 
@@ -84,56 +84,64 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Project 5</h1>
-    <h5 class="post-description">a project with a background image</h5>
+    <h1 class="post-title">Chess Games PGN Files</h1>
+    <h5 class="post-description"></h5>
   </header>
 
-  <article class="post-content Project 5 clearfix">
-    <p>Every project has a beautiful feature shocase page. It’s easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.</p>
+  <article class="post-content Chess Games PGN Files clearfix">
+    <h1 id="chess-games-pgn-files">Chess Games PGN Files</h1>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
+<p>This directory contains PGN (Portable Game Notation) files for the chess games viewer.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: Project
-description: a project with a background image
-img: /assets/img/12.jpg
----
+<h2 id="converting-cbh-to-pgn">Converting CBH to PGN</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">WinsAgainstGMs.cbh</code> file needs to be converted to PGN format. Here are the recommended methods:</p>
+
+<h3 id="method-1-export-from-chessbase-recommended">Method 1: Export from ChessBase (Recommended)</h3>
+
+<ol>
+  <li>Open ChessBase</li>
+  <li>Open your database: <code class="language-plaintext highlighter-rouge">assets/WinsAgainstGMs.cbh</code></li>
+  <li>Select all games (Ctrl+A / Cmd+A)</li>
+  <li>Go to <strong>File &gt; Export &gt; PGN</strong></li>
+  <li>Save as: <code class="language-plaintext highlighter-rouge">assets/pgn/WinsAgainstGMs.pgn</code></li>
+  <li>Make sure to include all game headers (Event, White, Black, Date, Result, etc.)</li>
+</ol>
+
+<h3 id="method-2-using-pgn-extract-if-available">Method 2: Using pgn-extract (if available)</h3>
+
+<p>If you have <code class="language-plaintext highlighter-rouge">pgn-extract</code> installed:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This won't work directly with CBH, but if you have other formats</span>
+pgn-extract <span class="nt">-o</span> assets/pgn/WinsAgainstGMs.pgn input.pgn
 </code></pre></div></div>
 
-<div class="img_row">
-    <img class="col one left" src="/assets/img/1.jpg" alt="" title="example image" />
-    <img class="col one left" src="/assets/img/2.jpg" alt="" title="example image" />
-    <img class="col one left" src="/assets/img/3.jpg" alt="" title="example image" />
-</div>
-<div class="col three caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="img_row">
-    <img class="col three left" src="/assets/img/5.jpg" alt="" title="example image" />
-</div>
-<div class="col three caption">
-    This image can also have a caption. It's like magic.
-</div>
+<h3 id="method-3-online-converters">Method 3: Online Converters</h3>
 
-<p>You can also put regular text between your rows of images. Say you wanted to write a little bit about your project before you posted the rest of the images. You describe how you toiled, sweated, <em>bled</em> for your project, and then…. you reveal it’s glory in the next row of images.</p>
+<p>Some online chess tools can convert CBH to PGN:</p>
+<ul>
+  <li>ChessBase Online</li>
+  <li>Various chess database converters</li>
+</ul>
 
-<div class="img_row">
-    <img class="col two left" src="/assets/img/6.jpg" alt="" title="example image" />
-    <img class="col one left" src="/assets/img/11.jpg" alt="" title="example image" />
-</div>
-<div class="col three caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+<h2 id="file-format">File Format</h2>
 
-<p><br /><br /></p>
+<p>The PGN file should contain one or more games in standard PGN format:</p>
 
-<p>The code is simple. Just add a col class to your image, and another class specifying the width: one, two, or three columns wide. Here’s the code for the last row of images above:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Event "Tournament Name"]
+[Site "Location"]
+[Date "2024.01.13"]
+[Round "1"]
+[White "Player Name"]
+[Black "Opponent Name"]
+[Result "1-0"]
 
-<div class="img_row">
-    <img class="col two left" src="/img/6.jpg" />
-    <img class="col one left" src="/img/11.jpg" />
-</div>
+1. e4 e5 2. Nf3 Nc6 3. Bb5 ...
+
+[Event "Next Game"]
+...
+</code></pre></div></div>
+
+<p>Each game should be separated by a blank line.</p>
 
   </article>
 
