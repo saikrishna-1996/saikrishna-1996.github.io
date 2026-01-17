@@ -107,6 +107,14 @@
 
     #board {
       margin: 0 auto $space-2;
+      width: 480px;
+      height: 480px;
+      max-width: 100%;
+      
+      @media (max-width: $on-palm) {
+        width: 100%;
+        max-width: 400px;
+      }
     }
 
     #controls {

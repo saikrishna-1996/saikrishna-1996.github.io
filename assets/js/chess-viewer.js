@@ -12,8 +12,26 @@
 
   // Initialize the viewer
   function init() {
+    console.log('Initializing chess viewer...');
     const boardEl = document.getElementById('board');
-    if (!boardEl) return;
+    if (!boardEl) {
+      console.error('Board element not found!');
+      return;
+    }
+
+    // Check if Chessboard is available
+    if (typeof Chessboard === 'undefined') {
+      console.error('Chessboard.js not loaded!');
+      showError('Chessboard library failed to load. Please check your internet connection.');
+      return;
+    }
+
+    // Check if Chess is available
+    if (typeof Chess === 'undefined') {
+      console.error('Chess.js not loaded!');
+      showError('Chess.js library failed to load. Please check your internet connection.');
+      return;
+    }
 
     const config = {
       draggable: false,
@@ -22,7 +40,14 @@
       onMoveEnd: onMoveEnd
     };
 
-    board = Chessboard('board', config);
+    try {
+      board = Chessboard('board', config);
+      console.log('Chessboard initialized');
+    } catch (e) {
+      console.error('Error initializing chessboard:', e);
+      showError('Failed to initialize chessboard: ' + e.message);
+      return;
+    }
 
     // Load PGN file
     loadPGN();
@@ -33,54 +58,76 @@
 
   // Load PGN file
   function loadPGN() {
-    // Use path from window variable set by Jekyll, or fallback
-    const pgnPath = window.CHESS_PGN_PATH || '/assets/pgn/WinsAgainstGMs.pgn';
+    // Use path from window variable set by Jekyll, or fallback to relative path
+    const pgnPath = window.CHESS_PGN_PATH || './assets/pgn/WinsAgainstGMs.pgn';
+    console.log('Loading PGN from:', pgnPath);
+    
     fetch(pgnPath)
       .then(response => {
+        console.log('PGN fetch response:', response.status, response.statusText);
         if (!response.ok) {
-          throw new Error('PGN file not found. Please convert CBH to PGN first.');
+          throw new Error(`PGN file not found (${response.status}). Please ensure WinsAgainstGMs.pgn exists.`);
         }
         return response.text();
       })
       .then(text => {
+        console.log('PGN loaded, length:', text.length);
         pgnText = text;
         parsePGN(text);
+        console.log('Parsed games:', games.length);
         if (games.length > 0) {
           loadGame(0);
           populateGameSelector();
         } else {
-          showError('No games found in PGN file.');
+          showError('No games found in PGN file. Please check the file format.');
         }
       })
       .catch(error => {
         console.error('Error loading PGN:', error);
-        showError('Could not load PGN file. Please ensure WinsAgainstGMs.pgn exists in assets/pgn/');
+        showError('Could not load PGN file: ' + error.message + '<br>Path attempted: ' + pgnPath);
       });
   }
 
   // Parse PGN text into individual games
   function parsePGN(text) {
     games = [];
+    
+    if (!text || text.trim().length === 0) {
+      console.warn('PGN text is empty');
+      return;
+    }
+    
+    // Try to find games by looking for [Event tags
     const gameRegex = /(\[Event[^\]]+\][\s\S]*?)(?=\[Event|$)/g;
     let match;
+    let lastIndex = 0;
 
     while ((match = gameRegex.exec(text)) !== null) {
       const gameText = match[1].trim();
-      if (gameText) {
+      if (gameText && gameText.length > 50) { // Minimum length check
         games.push(gameText);
       }
+      lastIndex = match.index + match[0].length;
     }
 
-    // If no games found with regex, try splitting by double newlines
+    // If no games found with regex, try treating entire text as one game
+    if (games.length === 0 && text.trim().length > 50) {
+      console.log('Treating entire PGN as single game');
+      games.push(text.trim());
+    }
+
+    // If still no games, try splitting by double newlines
     if (games.length === 0) {
       const parts = text.split(/\n\s*\n/);
       parts.forEach(part => {
         const trimmed = part.trim();
-        if (trimmed && trimmed.includes('[Event')) {
+        if (trimmed && trimmed.length > 50 && (trimmed.includes('[Event') || trimmed.match(/^\d+\./))) {
           games.push(trimmed);
         }
       });
     }
+    
+    console.log('Parsed', games.length, 'game(s) from PGN');
   }
 
   // Load a specific game
