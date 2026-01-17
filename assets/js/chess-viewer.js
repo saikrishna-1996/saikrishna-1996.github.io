@@ -151,8 +151,11 @@
     const movesMatch = gameText.match(/\]([\s\S]*)/);
     let movesText = movesMatch ? movesMatch[1] : '';
     
-    // Remove clock annotations like { [%clk 1:59:52] } for cleaner display
-    movesText = movesText.replace(/\{\s*\[%clk[^\]]+\]\s*\}/g, '');
+    // Remove all annotations: clock annotations, evaluation annotations, comments, etc.
+    movesText = movesText.replace(/\{\s*\[%[^\]]+\]\s*\}/g, ''); // Remove [%clk], [%eval], [%evp], etc.
+    movesText = movesText.replace(/\{[^}]*\}/g, ''); // Remove all comments in braces
+    movesText = movesText.replace(/\$\d+/g, ''); // Remove move quality annotations like $1, $5, etc.
+    movesText = movesText.replace(/\[%[^\]]+\]/g, ''); // Remove any remaining annotations
 
     // Update header
     const headerEl = document.getElementById('game-header');
@@ -169,15 +172,23 @@
 
     // Parse and load moves
     try {
+      // Clean up the moves text more thoroughly
+      movesText = movesText.trim();
+      
       // Try loading with chess.js
-      game.load_pgn(movesText);
+      const loadResult = game.load_pgn(movesText);
+      if (!loadResult) {
+        throw new Error('Failed to load PGN - invalid format');
+      }
+      
       moveHistory = game.history({ verbose: true });
       currentMoveIndex = moveHistory.length;
       updateBoard();
       updateMoveList();
     } catch (e) {
       console.error('Error loading game:', e);
-      showError('Error parsing game moves.');
+      console.error('Moves text:', movesText.substring(0, 200));
+      showError('Error parsing game moves: ' + e.message);
     }
   }
 
