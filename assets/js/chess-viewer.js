@@ -92,37 +92,33 @@
       return;
     }
     
-    // Try to find games by looking for [Event tags
-    const gameRegex = /(\[Event[^\]]+\][\s\S]*?)(?=\[Event|$)/g;
-    let match;
-    let lastIndex = 0;
-
-    while ((match = gameRegex.exec(text)) !== null) {
-      const gameText = match[1].trim();
-      if (gameText && gameText.length > 50) { // Minimum length check
-        games.push(gameText);
+    // Split by double newlines (standard PGN separator)
+    const parts = text.split(/\n\s*\n/);
+    
+    parts.forEach(part => {
+      const trimmed = part.trim();
+      // A valid game should have [Event tag and moves (starting with 1.)
+      if (trimmed && trimmed.length > 50 && trimmed.includes('[Event') && trimmed.match(/\n\s*1\./)) {
+        games.push(trimmed);
       }
-      lastIndex = match.index + match[0].length;
-    }
-
-    // If no games found with regex, try treating entire text as one game
-    if (games.length === 0 && text.trim().length > 50) {
-      console.log('Treating entire PGN as single game');
-      games.push(text.trim());
-    }
-
-    // If still no games, try splitting by double newlines
+    });
+    
+    // If that didn't work, try regex matching [Event blocks
     if (games.length === 0) {
-      const parts = text.split(/\n\s*\n/);
-      parts.forEach(part => {
-        const trimmed = part.trim();
-        if (trimmed && trimmed.length > 50 && (trimmed.includes('[Event') || trimmed.match(/^\d+\./))) {
-          games.push(trimmed);
+      const gameRegex = /(\[Event[^\]]*\]\s*\n[\s\S]*?)(?=\n\s*\[Event|$)/g;
+      let match;
+      while ((match = gameRegex.exec(text)) !== null) {
+        const gameText = match[1].trim();
+        if (gameText && gameText.length > 50) {
+          games.push(gameText);
         }
-      });
+      }
     }
     
     console.log('Parsed', games.length, 'game(s) from PGN');
+    if (games.length === 0) {
+      console.error('No games found! PGN text preview:', text.substring(0, 500));
+    }
   }
 
   // Load a specific game
