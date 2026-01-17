@@ -13,23 +13,18 @@
   // Initialize the viewer
   function init() {
     console.log('Initializing chess viewer...');
+    
+    // Wait for libraries to load
+    if (typeof Chess === 'undefined' || typeof Chessboard === 'undefined') {
+      console.log('Waiting for libraries to load...');
+      setTimeout(init, 100);
+      return;
+    }
+
     const boardEl = document.getElementById('board');
     if (!boardEl) {
       console.error('Board element not found!');
-      return;
-    }
-
-    // Check if Chessboard is available
-    if (typeof Chessboard === 'undefined') {
-      console.error('Chessboard.js not loaded!');
-      showError('Chessboard library failed to load. Please check your internet connection.');
-      return;
-    }
-
-    // Check if Chess is available
-    if (typeof Chess === 'undefined') {
-      console.error('Chess.js not loaded!');
-      showError('Chess.js library failed to load. Please check your internet connection.');
+      showError('Chess board container not found.');
       return;
     }
 
@@ -42,7 +37,7 @@
 
     try {
       board = Chessboard('board', config);
-      console.log('Chessboard initialized');
+      console.log('Chessboard initialized successfully');
     } catch (e) {
       console.error('Error initializing chessboard:', e);
       showError('Failed to initialize chessboard: ' + e.message);
@@ -330,10 +325,16 @@
     // Not used since board is not draggable
   }
 
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
+  // Initialize when DOM and libraries are ready
+  function startInit() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(init, 100);
+      });
+    } else {
+      setTimeout(init, 100);
+    }
   }
+  
+  startInit();
 })();
