@@ -1,23 +1,446 @@
-[Event "Tata Steel Chess Challengers"]
-[Site "https://lichess.org/broadcast/tata-steel-chess-2026--challengers/round-1/ZVNLsNSS/IOVcg1oZ"]
-[Date "2026.01.17"]
-[Round "1.3"]
-[White "Ivic, Velimir"]
-[Black "Oro, Faustino"]
-[Result "*"]
-[WhiteElo "2638"]
-[WhiteTitle "GM"]
-[WhiteFideId "950122"]
-[BlackElo "2516"]
-[BlackTitle "IM"]
-[BlackFideId "20000197"]
-[Variant "Standard"]
-[ECO "E11"]
-[Opening "Bogo-Indian Defense: Retreat Variation"]
-[UTCDate "2026.01.17"]
-[UTCTime "10:52:37"]
-[BroadcastName "Tata Steel Chess 2026 | Challengers"]
-[BroadcastURL "https://lichess.org/broadcast/tata-steel-chess-2026--challengers/round-1/ZVNLsNSS"]
-[GameURL "https://lichess.org/broadcast/tata-steel-chess-2026--challengers/round-1/ZVNLsNSS/IOVcg1oZ"]
+﻿[Event "Round 4: Harsha Bharathakoti - Sai Kris"]
+[Site "lichess.org"]
+[Date "2025.11.28"]
+[Round "4.13"]
+[White "Harsha Bharathakoti"]
+[Black "Sai Krishna G V"]
+[Result "0-1"]
+[ECO "E71"]
+[WhiteElo "2526"]
+[BlackElo "2412"]
+[Annotator "thes"]
+[PlyCount "92"]
+[EventDate "2025.??.??"]
+[EventType "game"]
+[SourceVersionDate "2015.05.24"]
 
-1. d4 { [%clk 1:59:52] } 1... Nf6 { [%clk 1:59:50] } 2. c4 { [%clk 1:59:35] } 2... e6 { [%clk 1:59:42] } 3. Nf3 { [%clk 1:59:19] } 3... d5 { [%clk 1:57:59] } 4. g3 { [%clk 1:58:33] } 4... Bb4+ { [%clk 1:51:03] } 5. Bd2 { [%clk 1:57:52] } 5... Be7 { [%clk 1:50:34] } 6. Bg2 { [%clk 1:57:13] } 6... c6 { [%clk 1:50:10] } 7. Qc2 { [%clk 1:56:15] } 7... Nbd7 { [%clk 1:48:54] } 8. O-O { [%clk 1:54:51] } 8... O-O { [%clk 1:47:02] } 9. Bf4 { [%clk 1:53:12] } 9... a5 { [%clk 1:43:36] } 10. Rd1 { [%clk 1:51:13] } 10... h6 { [%clk 1:40:47] } 11. Na3 { [%clk 1:43:04] } 11... Nb6 { [%clk 1:22:54] } 12. c5 { [%clk 1:33:38] } 12... Nbd7 { [%clk 1:22:40] } 13. Rac1 { [%clk 1:31:52] } 13... Nh5 { [%clk 0:45:54] } 14. Be3 { [%clk 1:26:28] } 14... Qc7 { [%clk 0:43:04] } 15. Qc3 { [%clk 1:13:57] } 15... Re8 { [%clk 0:38:51] } 16. Nc2 { [%clk 1:04:07] } 16... Bf6 { [%clk 0:34:34] } 17. Qd2 { [%clk 0:56:27] } 17... e5 { [%clk 0:33:58] } 18. dxe5 { [%clk 0:54:06] } 18... Nxe5 { [%clk 0:33:48] } 19. Bd4 { [%clk 0:49:54] } 19... Bg4 { [%clk 0:28:15] } 20. Ne3 { [%clk 0:46:54] } 20... Bxf3 { [%clk 0:24:52] } 21. exf3 { [%clk 0:46:19] } 21... Nd7 { [%clk 0:21:25] } 22. Nf5 { [%clk 0:39:09] } 22... Bxd4 { [%clk 0:17:44] } 23. Qxd4 { [%clk 0:38:46] } 23... Nhf6 { [%clk 0:17:36] } 24. f4 { [%clk 0:37:19] } 24... Re6 { [%clk 0:16:44] } 25. a3 { [%clk 0:32:20] } 25... a4 { [%clk 0:13:31] } 26. Qb4 { [%clk 0:29:11] } 26... Ra5 { [%clk 0:11:57] } *
+{I played against Harsha in the previous 2 editions of the US Masters as well.
+We drew the first time but I lost the second game (in KID Sameisch). This is
+our 3rd encounter} 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 O-O 6. Be3 Nc6
+7. d5 Ne5 8. f4 Ned7 9. Nge2 $5 {This is an unsual move order. 9.g4 is the
+popular move. 9.Nf3 and 9.Bd3 are also tried. I wasn't prepared against this}
+c6 (9... Nb6 10. Ng3 e6 {should be played}) 10. Ng3 Nb6 11. Be2 cxd5 12. cxd5
+e6 13. dxe6 Bxe6 14. O-O Re8 $1 {preventing Nb5} 15. Rf2 (15. Nb5 Bd5 16. Bxb6
+Qxb6+ {[%csl Gg1]}) 15... Rc8 16. Bd4 (16. Nb5 Bd5) 16... Bd7 17. Bf3 Bc6 18.
+Qd3 Bh6 19. Bg4 Rc7 20. Rd1 Bg7 21. Bf3 Rce7 22. Kh2 Rd7 23. b4 a6 24. Rfd2 Na4
+25. Nxa4 Bxa4 26. Re1 Bh6 27. Be3 d5 28. e5 d4 29. Bf2 Bb5 30. Qc2 Nd5 31. Bxd5
+Rxd5 32. Re4 d3 33. Qd1 f5 34. exf6 Rxe4 35. Nxe4 Bxf4+ 36. Bg3 Bxd2 37. Qxd2
+Qd7 38. Qc3 d2 39. f7+ Qxf7 40. Nxd2 Rd3 41. Qc2 Ra3 42. Ne4 Bc6 43. Nc3 Qf6 (
+43... Rxc3 $3 44. Qxc3 Qxa2 $19 {White has to give up the bishop to prevent
+immediate checkmate.}) 44. Ne4 Qe6 45. Nc3 Qe3 46. Ne2 Qe4 0-1
+
+[Event "Round 6: Parkhov, Yair - Sai Krishna G"]
+[Site "lichess.org"]
+[Date "2025.11.29"]
+[Round "6.9"]
+[White "Parkhov, Yair"]
+[Black "Sai Krishna G V"]
+[Result "0-1"]
+[ECO "E73"]
+[WhiteElo "2499"]
+[BlackElo "2412"]
+[Annotator "thes"]
+[PlyCount "84"]
+[EventDate "2025.??.??"]
+[EventType "game"]
+[SourceVersionDate "2015.05.24"]
+
+{[%evp 0,84,30,35,19,3,38,37,41,43,31,34,42,21,22,34,50,50,40,42,31,21,65,23,
+69,67,60,46,47,39,32,38,105,106,106,-22,-25,9,53,-68,14,-11,2,-78,-43,-68,-75,
+-85,-79,-90,59,5,42,-28,-30,30,-46,-22,-254,-251,-189,-189,-250,-233,-247,-268,
+-236,-335,-308,-327,-342,-343,-351,-404,-415,-500,-488,-614,-649,-690,-713,
+-795,-826,-838,-860,-820,-483]} 1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2
+O-O 6. Be3 a5 (6... Nc6 7. d5 Ne5 8. f4 Ned7 9. h3) 7. Nf3 Ng4 8. Bg5 h6 9. Bh4
+Nf6 10. h3 Na6 11. Qc1 a4 (11... e5 12. dxe5 dxe5 13. O-O Kh7 (13... Qe8 14.
+Bxf6 Bxf6 15. Qxh6) 14. Nxe5 Qe8 15. Bxf6 Bxf6 16. Nf3 Bxc3 17. Qxc3 Qxe4 18.
+Bd3 Qf4 19. g3 Qd6) 12. e5 Nd7 13. exd6 cxd6 14. Nxa4 f5 15. O-O f4 (15... g5
+16. Bg3 e5) 16. c5 g5 17. Nxg5 (17. Bxg5 hxg5 18. Nxg5 Nc7 19. Qc2 Rf6 20. Qh7+
+Kf8 21. Bd1 dxc5 22. dxc5 Rh6 23. Qf5+ Nf6 24. Qxf4 Ncd5) 17... hxg5 18. Bxg5
+d5 19. Bf3 (19. Nc3 Nc7 20. Bxf4 e5 21. dxe5 Nxe5 22. Bg3 d4 23. Re1 dxc3 24.
+Bxe5 Bxe5 25. Bc4+ Be6 26. Bxe6+ Nxe6 27. Rxe5 cxb2 28. Qxb2 Qd4) 19... Nb4 (
+19... Rf5 $17) 20. a3 Rxa4 21. Qd1 Rf5 22. Qxa4 Nc6 23. h4 Nxd4 24. Bg4 Rxg5
+25. hxg5 Ne5 26. Bxc8 Qxc8 27. Rfd1 Qg4 28. Qe8+ Kh7 29. Rxd4 Nf3+ 30. Kf1 Nxd4
+31. g6+ Kh6 32. Qg8 (32. Qxe7 f3 33. Qe3+ (33. gxf3 Qh3+ 34. Ke1 Nc2+ 35. Kd2
+Nxa1) 33... Kh5 34. gxf3 Qh3+ 35. Ke1 Nc2+) 32... Qxg6 33. Rd1 Qh5 34. Rxd4
+Bxd4 35. Qf8+ Kg5 36. Qg8+ Kf6 37. Qf8+ Ke6 38. Kg1 Qd1+ 39. Kh2 Bxf2 40. Qc8+
+Ke5 41. Qh8+ Ke4 42. Qh7+ Ke5 0-1
+
+[Event "6th KIIT open"]
+[Site "?"]
+[Date "2014.05.31"]
+[Round "10.9"]
+[White "Aravindh Chithambaram Vr."]
+[Black "Sai Krishna G.V."]
+[Result "0-1"]
+[ECO "C74"]
+[WhiteElo "2439"]
+[BlackElo "2358"]
+[PlyCount "62"]
+[EventType "swiss"]
+[SourceVersionDate "2015.05.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. c3 f5 6. d3 Nf6 7. O-O Be7 8. Bb3
+Na5 9. Bc2 O-O 10. Nbd2 f4 11. d4 Nd7 12. Qe2 g5 13. h3 Qe8 14. b4 Nc6 15. Bb2
+h5 16. Qc4+ Kh7 17. d5 Nd8 18. Nh2 Nf6 19. Qxc7 g4 20. hxg4 hxg4 21. Rfe1 Nf7
+22. Qc4 Ng5 23. Kf1 Qh5 24. Ke2 f3+ 25. gxf3 gxf3+ 26. Nhxf3 Nxf3 27. Nxf3 Bg4
+28. Qd3 Ng8 29. Rh1 Bh4 30. Kd2 Rxf3 31. Qe2 Bg5+ 0-1
+
+[Event "Quebec Open"]
+[Site "Montreal"]
+[Date "2025.07.26"]
+[Round "9"]
+[White "Bator"]
+[Black "Sai"]
+[Result "0-1"]
+[ECO "C54"]
+[WhiteElo "2413"]
+[Annotator "thes"]
+[PlyCount "130"]
+[EventDate "2025.07.21"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "CAN"]
+[SourceVersionDate "2015.05.24"]
+
+{[%evp 0,110,27,12,14,23,25,12,21,61,-13,-12,-10,-1,11,-34,-17,-33,9,5,24,7,-1,
+25,23,18,18,18,56,37,39,-6,48,25,59,57,107,96,145,138,123,149,167,148,205,213,
+211,196,203,167,190,193,191,180,180,183,177,176,188,185,188,158,180,188,189,
+188,182,171,182,181,181,147,181,175,181,181,181,187,187,187,187,193,187,180,
+180,187,187,192,192,161,161,121,147,115,160,160,159,30,92,101,80,66,131,137,
+163,73,137,141,136,129,99,73,91]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5.
+d3 O-O (5... d6 6. O-O a6 7. Bb3 Ba7 8. Nbd2 O-O 9. h3 h6 10. Re1 Be6) (5... h6
+) 6. O-O d6 (6... d5 7. exd5 Nxd5 8. Re1 Bg4 9. h3 Bh5 10. Nbd2 (10. g4 Bg6 11.
+Nxe5 Nxe5 12. Rxe5 c6 $17) 10... Nb6 (10... Bb6 11. Ne4 f6 12. Ng3 (12. b4 Kh8
+13. b5 (13. Bxd5 Qxd5 14. c4 Qd7 15. c5 Bxf3 16. Qxf3 (16. gxf3 f5 $13) 16...
+Nxb4 17. cxb6 Nc2 18. Bb2 axb6 $13 19. Nc3 $6 Qc6 $15)) 12... Bf7 13. Bb3 (13.
+Bb5 Qd7 14. Be3 $6 Nxe3 15. fxe3 Rad8 $15) (13. Nh4 Qd7 14. Bd2 Kh8) (13. Nf5
+Qd7) 13... Na5 14. Bc2 c5 $1 $13) 11. Bb3 Qxd3 12. Nxe5 Qf5 13. Nef3 Rad8 14.
+Qe2 Nd5 15. Ne4 Bxf3 16. Qxf3 Qxf3 17. gxf3 Bb6 18. a4 h6) 7. Re1 Bb6 (7... a6)
+8. a4 a5 9. h3 Ne7 10. d4 exd4 11. cxd4 d5 12. exd5 Nexd5 13. Bg5 c6 14. Nc3
+Qd6 15. Re5 Bd8 16. Nxd5 cxd5 (16... Nxd5 17. Bxd8 Rxd8 18. Bxd5 cxd5 19. Qb3 {
+engine says it's +0.2 but I did not like this position for Black}) 17. Bxf6
+Bxf6 $2 (17... dxc4 18. Bxd8 Rxd8 19. Qc2 Qg6 (19... Be6 20. Ng5) (19... f6 20.
+Qxc4+) (19... Qh6) 20. Qxc4 (20. Rae1 Be6 21. Qc3 h6 22. Rxa5 Bd5 23. Rxa8 Rxa8
+) 20... Bxh3 21. Rg5 Qf6 (21... Qe6 22. d5 Qf6 23. Qd4)) 18. Rxd5 Qb4 (18...
+Qf4 19. Rb5 (19. Qb3 Be6 20. Rb5 Bxc4 21. Qxc4 Rad8 (21... Rac8 22. Rc5) 22.
+Rd1) 19... Bd7) 19. b3 $18 b6 20. Ne5 Be6 21. Nc6 Bxd5 22. Nxb4 Bxc4 23. bxc4
+axb4 24. Rc1 Rfd8 25. d5 Be7 26. Qb3 Ra7 27. Kf1 Bc5 28. Rc2 Rda8 29. Ra2 Re8
+30. g4 h6 31. Qd3 Rea8 32. Qc2 Re8 33. Ra1 Bd4 34. Rd1 Bc5 35. h4 Rea8 36. Ra1
+Bd4 37. Ra2 Bc5 38. Kg2 Re8 39. Ra1 Bd4 40. Rd1 Bc5 41. Kf3 Rea8 42. Ra1 Bd4
+43. Ra2 Bc5 44. g5 h5 45. g6 $2 fxg6 46. Qxg6 Rf7+ 47. Kg2 Raf8 (47... b3 48.
+Rb2 Rxa4 $11 {I didn't consider this}) 48. Qd3 Rxf2+ 49. Rxf2 Rxf2+ 50. Kg3 Rf6
+51. Qe2 Kf8 (51... b3 52. Qe8+ Rf8 53. Qb5 $18) 52. Qd1 Rg6+ 53. Kf3 Rg1 54.
+Qc2 (54. Qd3 $1 $18) 54... Rf1+ 55. Ke4 Rf2 56. Qb3 (56. Qd1 Rf6 57. a5 $18)
+56... Re2+ 57. Kf4 Rf2+ 58. Kg3 Rf6 59. Qd1 (59. a5 $18) 59... Bd6+ 60. Kg2 Bc5
+61. Qb1 $6 (61. a5 $18) 61... Rf4 62. Kg3 $6 Bd6 63. Kh3 $4 Rf2 64. Qg1 Rh2+
+65. Qxh2 Bxh2 0-1
+
+[Event "Round 3: Barbosa, Oliver - Sai Krishna "]
+[Site "lichess.org"]
+[Date "2025.08.29"]
+[Round "3.5"]
+[White "Barbosa, Oliver"]
+[Black "Sai Krishna G V"]
+[Result "0-1"]
+[ECO "E84"]
+[WhiteElo "2408"]
+[BlackElo "2390"]
+[Annotator "thes"]
+[PlyCount "108"]
+[EventDate "2025.??.??"]
+[EventType "game"]
+[SourceVersionDate "2015.05.24"]
+[TimeControl "90+30"]
+
+1. d4 {[%eval 17,0] [%emt 0:00:00]} Nf6 {[%eval 19,0] [%emt 0:00:00]} 2. c4 {
+[%eval 18,0] [%emt 0:00:00]} g6 {[%eval 28,0] [%emt 0:00:00]} 3. Nc3 {[%eval
+18,0] [%emt 0:00:00]} Bg7 {[%eval 51,0] [%emt 0:00:00]} 4. e4 {[%eval 4,0] 
+[%emt 0:00:00]} d6 {[%eval 55,0] [%emt 0:00:00]} 5. f3 {[%eval 26,0] [%emt 0:
+00:00]} O-O {[%eval 37,0] [%emt 0:00:00]} 6. Be3 {[%eval 25,0] [%emt 0:00:00]}
+Nc6 {[%eval 56,0] [%emt 0:00:00]} 7. Nge2 {[%eval 44,0] [%emt 0:00:00]} a6 {
+[%eval 47,0] [%emt 0:00:00]} 8. Qd2 {[%eval 75,0] [%emt 0:00:00]} Rb8 {[%eval
+72,0] [%emt 0:00:00]} 9. h4 {[%eval 64,0] [%emt 0:00:00]} h5 {[%eval 55,0] 
+[%emt 0:00:00]} 10. Rc1 {[%eval 6,0] [%emt 0:00:00]} (10. Nc1 e5 11. d5 Nd4 12.
+N1e2 c5 13. dxc6 bxc6 14. Nxd4 exd4 15. Bxd4 d5) 10... Bd7 {[%eval 71,0] [%emt
+0:00:00]} 11. Nd1 {[%eval 76,0] [%emt 0:00:00]} Re8 {[%eval 59,0] [%emt 0:00:
+00]} (11... e5 12. d5 Ne7 13. c5 Ne8 14. Nf2 c6 15. cxd6 Nxd6 16. Bc5 Nec8 17.
+dxc6 Bxc6 18. Rd1) 12. Nf2 {[%eval 58,0] [%emt 0:00:00]} b5 {[%eval 68,0] 
+[%emt 0:00:00]} 13. c5 {[%eval 58,0] [%emt 0:00:00]} dxc5 {[%eval 53,0] [%emt
+0:00:00]} 14. Rxc5 {[%eval -189,0] [%emt 0:00:00]} e5 {[%eval 62,0] [%emt 0:00:
+00]} 15. d5 {[%eval -305,0] [%emt 0:00:00]} Ne7 {[%eval 9,0] [%emt 0:00:00]}
+16. Qc1 {[%eval -96,0] [%emt 0:00:00]} Bf8 {[%eval 283,0] [%emt 0:00:00]} 17.
+Bg5 {[%eval 35,0] [%emt 0:00:00]} (17. Rxc7 Nexd5 18. exd5 Bb4+ 19. Bd2 Bxd2+
+20. Kxd2 Nxd5 21. Rc5 Bf5 22. Ke1 e4 23. Qd2 Qb6 (23... e3 24. Qxd5 Qa5+ 25.
+Nc3 Qb4 (25... Rbd8 26. Qb3 Qb6 27. Qb4 (27. Na4 Qa7) 27... exf2+ 28. Kxf2 Rc8
+29. Na4 Qa7 30. Kg3) 26. Nfd1 Rbd8 27. a3) 24. Qxd5 Rbd8 25. Qc6 Qa5+ 26. Nc3
+exf3+) 17... Nh7 {[%eval 75,0] [%emt 0:00:00]} 18. Bd2 {[%eval 55,0] [%emt 0:
+00:00]} Nc8 {[%eval 111,0] [%emt 0:00:00]} 19. Rc2 {[%eval 55,0] [%emt 0:00:00]
+} Nd6 {[%eval 58,0] [%emt 0:00:00]} 20. b3 {[%eval 55,0] [%emt 0:00:00]} b4 {
+[%eval 61,0] [%emt 0:00:00]} 21. Nd3 {[%eval 6,0] [%emt 0:00:00]} f5 {[%eval
+56,0] [%emt 0:00:00]} 22. Nc5 {[%eval 16,0] [%emt 0:00:00]} Bc8 {[%eval 22,0] 
+[%emt 0:00:00]} 23. g3 {[%eval 36,0] [%emt 0:00:00]} a5 {[%eval 41,0] [%emt 0:
+00:00]} 24. Bg2 {[%eval 0,0] [%emt 0:00:00]} Nb5 {[%eval 18,0] [%emt 0:00:00]}
+25. Be3 {[%eval 21,0] [%emt 0:00:00]} Bd6 {[%eval 54,0] [%emt 0:00:00]} 26. O-O
+{[%eval 34,0] [%emt 0:00:00]} Qe7 {[%eval 45,0] [%emt 0:00:00]} 27. Bf2 {
+[%eval 26,0] [%emt 0:00:00]} Rf8 {[%eval 38,0] [%emt 0:00:00]} 28. Qd2 {
+[%eval 0,0] [%emt 0:00:00]} Na3 {[%eval 5,0] [%emt 0:00:00]} (28... f4 29. gxf4
+exf4 30. Nd3) (28... Kh8 29. f4) 29. Rcc1 {[%eval 6,0] [%emt 0:00:00]} Rb5 {
+[%eval 5,0] [%emt 0:00:00]} 30. Na4 {[%eval 48,0] [%emt 0:00:00]} Ba6 {[%eval
+45,0] [%emt 0:00:00]} 31. Rfe1 {[%eval 14,0] [%emt 0:00:00]} Bc8 {[%eval 65,0]
+[%emt 0:00:00]} 32. exf5 {[%eval 64,0] [%emt 0:00:00]} gxf5 {[%eval 158,0] 
+[%emt 0:00:00]} 33. Qh6 {[%eval 92,0] [%emt 0:00:12]} Bd7 {[%eval 123,0] [%emt
+0:03:11]} 34. f4 {[%eval 48,0] [%emt 0:02:15]} Rf6 {[%eval 72,0] [%emt 0:03:01]
+} 35. Qxh5 {[%eval 24,0] [%emt 0:00:32]} Be8 {[%eval 13,0] [%emt 0:00:04]} 36.
+Qf3 {[%eval 13,0] [%emt 0:00:11]} e4 {[%eval 13,0] [%emt 0:00:29]} 37. Qe3 {
+[%eval 25,0] [%emt 0:00:53]} Rxd5 {[%eval 11,0] [%emt 0:00:49]} 38. g4 {
+[%eval 13,0] [%emt 0:05:49]} Rd3 {[%eval 24,0] [%emt 0:02:34]} 39. Qa7 {
+[%eval -136,0] [%emt 0:00:06]} e3 {[%eval -156,0] [%emt 0:05:31]} 40. Bg3 {
+[%eval -148,0] [%emt 0:00:09]} fxg4 {[%eval -161,0] [%emt 0:00:24]} 41. Qxa5 {
+[%eval -137,0] [%emt 0:01:19]} Rd2 {[%eval -138,0] [%emt 0:00:34]} 42. Nc5 {
+[%eval -233,0] [%emt 0:02:58]} Bb5 {[%eval -233,0] [%emt 0:02:21]} 43. Qxb4 {
+[%eval -384,0] [%emt 0:06:33]} Bxe2 {[%eval -144,0] [%emt 0:00:57]} 44. Qxa3 {
+[%eval -203,0] [%emt 0:00:56]} Bf3 {[%eval -223,0] [%emt 0:00:20]} 45. Bxf3 {
+[%eval -398,0] [%emt 0:01:44]} gxf3 {[%eval -377,0] [%emt 0:00:03]} 46. Qa8+ {
+[%eval -366,0] [%emt 0:00:10]} Rf8 {[%eval -372,0] [%emt 0:00:31]} 47. Qxf3 {
+[%eval -364,0] [%emt 0:01:07]} Bxc5 {[%eval -383,0] [%emt 0:00:07]} 48. Kh1 {
+[%eval -395,0] [%emt 0:00:08]} Kh8 {[%eval -397,0] [%emt 0:01:28]} 49. f5 {
+[%eval -341,0] [%emt 0:00:05]} Nf6 {[%eval -358,0] [%emt 0:01:07]} 50. Rc4 {
+[%eval -496,0] [%emt 0:00:16]} Bd4 {[%eval -333,0] [%emt 0:01:21]} 51. Bxc7 {
+[%eval -472,0] [%emt 0:00:39]} Rf2 {[%eval -353,0] [%emt 0:00:50]} 52. Qc6 {
+[%eval -975,0] [%emt 0:00:18]} e2 {[%eval -1199,0] [%emt 0:00:57]} 53. Bg3 {
+[%eval -32747,0] [%emt 0:00:23]} Rf1+ {[%eval -727,0] [%emt 0:00:07]} 54. Kh2 {
+[%eval -758,0] [%emt 0:00:12]} Be5 {[%eval -771,0] [%emt 0:00:35]} 0-1
+
+[Event "Mauricie Open"]
+[Site "Troms Rivieres"]
+[Date "2025.03.23"]
+[Round "4"]
+[White "Shawn"]
+[Black "Sai"]
+[Result "0-1"]
+[ECO "C47"]
+[Annotator "thes"]
+[PlyCount "106"]
+[EventDate "2025.03.21"]
+[EventType "swiss"]
+[EventRounds "5"]
+[EventCountry "NOR"]
+[SourceVersionDate "2015.05.24"]
+
+{[%evp 0,106,25,31,18,38,21,8,23,13,-4,-6,-10,6,10,14,16,17,47,9,13,1,-5,4,17,
+17,3,-36,-20,-70,-64,-64,-105,-78,-53,-103,-66,-70,-56,-77,-65,-77,-40,-48,-24,
+-35,-18,-22,16,16,3,7,36,36,27,18,17,16,7,29,50,37,11,5,1,23,8,-44,-71,-113,
+-108,-102,-92,-135,-137,-165,-112,-185,-173,-166,-148,-163,-163,-168,-135,-108,
+-104,-147,-180,-237,-243,-243,-286,-286,-334,-334,-507,-507,-527,-29991,-547,
+-547,-547,-567,-567,-567,-577,-577,-28032]} 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4.
+d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8. exd5 O-O 9. O-O cxd5 10. h3 (10.
+Qf3 Rb8 (10... c6 11. Bg5 Be6 (11... Be7 12. Rfe1 Rb8 13. Rab1 h6 14. Bxh6 gxh6
+15. Qe3 Bd6 16. Qxh6 Rb4 17. Qg5+ Kh8 18. Qh6+ Kg8 $11) (11... h6 12. Bxf6 Qxf6
+13. Qxf6 gxf6 14. Ne2) 12. Ne2 Bg4 13. Qf4 Bd6 14. Qd4 Be6) 11. Bg5 c6 12. h3
+Bd6 13. Rab1 (13. b3 h6 14. Bf4 (14. Bxf6 Qxf6 15. Qxf6 gxf6 16. Ne2 c5) 14...
+Rb4 15. Bxd6 Qxd6 16. Rfe1 Bd7) 13... h6 14. Bf4 Re8 15. b3 Rb7) 10... c6 (
+10... Rb8 11. Qf3 Rb6) 11. Qf3 Bd6 12. Bf4 Qc7 13. Ne2 Re8 14. c4 Bxf4 15. Nxf4
+dxc4 16. Be2 Re5 17. Rfd1 g5 18. Nh5 Nxh5 19. Qxh5 Be6 20. Qf3 Rf5 (20... Qb6
+$1 21. Rd2 Rd5 (21... Bd5 22. Qc3 Rae8 23. Bf3) 22. Rc2 Bf5 23. Rxc4 Qxb2 24.
+Rac1 Re8 25. Bf1 Bg6 (25... Qxa2 26. Rxc6 Qd2 27. Rc7 a5 28. Ra1 (28. Rb1 Bg6)
+28... Bg6 29. g4 (29. Bc4 Re1+ 30. Kh2 Rf5)) 26. Rxc6 Rf5 27. Qg3 Qxa2 28. h4
+gxh4 (28... Qd2 29. R6c2 Qf4 30. Qxf4 gxf4 31. Ra2 a5 32. Rca1 Ra8 33. Ra4 {
+[%cal Gf1d3]}) 29. Qxh4) 21. Qc3 Qe5 22. Bg4 Qxc3 23. bxc3 Rd5 24. Bxe6 fxe6
+25. Re1 Rad8 26. Rxe6 Rd1+ 27. Rxd1 Rxd1+ 28. Kh2 Rc1 29. Rxc6 Rxc3 30. Ra6 Kf7
+31. Rxa7+ Ke6 32. Rxh7 Ra3 33. Rh6+ (33. Rc7 Kd5 34. f3 Rxa2 35. Kg3 Kd4 36. f4
+$11) 33... Kd5 34. Rh5 c3 35. Rxg5+ Kd4 36. Rg4+ Kd3 37. h4 (37. Rg3+ Kd2 38.
+Rxc3 (38. h4 Rxa2 39. Rxc3 Kxc3) 38... Rxc3) (37. f4 Ra8 38. Rg3+ Kd2 39. Rf3
+c2 40. Rf1 (40. Rf2+ Kd3 41. Rf1 Rc8) 40... Ke2 41. Rc1 Kd2 42. Rf1 c1=Q 43.
+Rxc1 Kxc1 44. Kg3 Kd2 45. Kf3 Kd3 (45... Ra3+ 46. Ke4 $11 (46. Kg4 Ke3 47. f5
+Ke4 48. Kg5 Rg3+ 49. Kf6 Rxg2 50. Ke6 Rxa2 51. f6 Ra6+ 52. Ke7 Ke5 53. f7 Ra7+
+54. Ke8 Ke6 55. f8=N+ Kd6 56. Ng6 $11) 46... Ra4+ 47. Ke5 Ke3 48. f5 Ra5+ 49.
+Ke6 Kf4 50. f6 Ra6+ 51. Ke7 Kf5 52. f7 Ra7+ 53. Ke8 Ke6 54. f8=N+) 46. g4 Kd4
+47. g5 Kd5 48. h4 Ke6 49. h5 Kf5 50. h6 Rxa2 51. Kg3 Ra4 52. Kh3 $11) 37...
+Rxa2 38. Rg8 Ra4 39. Rg3+ Kd2 40. Rxc3 Kxc3 41. Kg3 Ra2 42. h5 Kd4 43. Kf4
+Rxf2+ 44. Kg5 Ke5 45. g4 Ke6 46. Kg6 Ke7 47. g5 Rg2 (47... Kf8 48. Kh7 Rf7+ 49.
+Kh8 Rf5 50. h6 Rxg5 (50... Kf7 $19) 51. h7) 48. h6 Kf8 49. Kh7 Rxg5 50. Kh8 Kf7
+51. h7 Kg6 52. Kg8 Kh6+ 53. Kh8 Ra5 0-1
+
+[Event "US Masters"]
+[Site "?"]
+[Date "2023.11.26"]
+[Round "9"]
+[White "Larry Kaufman"]
+[Black "Sai Krishna G.V."]
+[Result "0-1"]
+[ECO "C90"]
+[Annotator "saikr"]
+[PlyCount "68"]
+[EventType "game"]
+[SourceVersionDate "2015.05.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Nf6 6. Re1 b5 7. Bb3 Be7 8. a4
+Bb7 9. c3 O-O 10. d4 Nd7 11. a5 Bf6 12. Be3 g6 13. Nbd2 Ne7 14. Bh6 Bg7 15.
+Bxg7 Kxg7 16. Bc2 c5 17. b4 exd4 (17... cxb4 18. cxb4 Nc6 19. Rb1 exd4 20. Nb3
+Rc8 21. Nbxd4) 18. cxd4 Nc6 19. bxc5 dxc5 20. d5 Nb4 21. Nb3 Rc8 22. Bb1 Re8
+23. Qd2 Qf6 24. Ra3 Qd6 25. Nc1 f5 26. Qb2+ Kg8 27. Rae3 fxe4 28. Bxe4 Nf6 29.
+Ng5 Nbxd5 30. Rf3 Nxe4 31. Rxe4 Nf4 32. Rxe8+ Rxe8 33. h4 Re1+ 34. Kh2 Nd3+ 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "2024.09.11"]
+[Round "5"]
+[White "Ohanyan, Emin"]
+[Black "Sai"]
+[Result "0-1"]
+[ECO "C58"]
+[Annotator "thes"]
+[PlyCount "110"]
+[SourceVersionDate "2015.05.24"]
+
+{[%evp 0,110,23,30,30,11,18,17,31,-33,-16,4,9,9,9,9,0,-11,-11,11,46,29,-16,-11,
+24,7,33,-18,73,-4,68,68,68,45,165,-8,-9,-13,1,1,-17,-44,1,-38,-32,-32,-30,-25,
+-32,-37,-26,-38,-38,-48,-44,-50,-16,-11,-31,-23,-13,-48,-48,-13,-45,-34,-31,0,
+0,-51,-31,-44,0,0,0,0,0,0,0,0,0,-18,-18,-18,-18,-18,-13,-25,-26,-26,-48,-55,
+-58,-101,-101,-98,-171,-204,-194,-195,-216,-338,-390,-531,-578,-579,-643,-703,
+-731,-905,-835,-982,-981]} 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5
+6. Bb5+ c6 7. dxc6 bxc6 8. Qf3 Be7 9. Bd3 h6 10. Ne4 Nd5 11. Ng3 g6 (11... Nf4
+12. Bf5 (12. Be4 O-O 13. Nf5 Bxf5 14. Bxf5 Nc4 $13 {[%cal Gc4d6]}) 12... Ba6
+13. d3 g6 14. Be4 O-O 15. Nc3 (15. h4 Qc7) 15... f5 $11 16. Bxf4 (16. Bxc6 Nxc6
+17. Qxc6 Rf6 $17 18. Qf3 (18. Qa4 Nxg2+ 19. Kf1 Rb8 20. a3 Nf4 $17) 18... Rb8
+$19) 16... exf4 17. Bxc6 fxg3 18. Qxg3 Nxc6 19. Qxg6+ Kh8 20. Qxh6+ Kg8 $11)
+12. O-O f5 13. Re1 e4 14. Nxe4 fxe4 15. Bxe4 Rf8 16. Qg3 Kd7 17. Bxd5 cxd5 18.
+Qxg6 Qb6 19. Qxb6 axb6 20. d4 Bb4 21. Nd2 Kc6 22. c3 Bd6 23. a4 Bf5 24. b4 Nc4
+25. Nxc4 dxc4 26. f3 Rf6 27. Be3 Bc7 28. Bf2 Bc2 29. Bh4 Rg6 30. b5+ Kd5 31.
+Re2 Bd3 32. Re7 Bd6 33. Rd7 Bf5 34. Rf7 Bc2 35. Re1 Re6 36. Rxe6 Kxe6 37. Rf6+
+Kd5 38. Rxh6 Rxa4 39. Rh5+ Ke6 40. Rh6+ Kd5 41. Rh5+ Ke6 42. Rh6+ Kd7 43. Bg3
+Bxg3 44. hxg3 Ra3 45. g4 Rxc3 46. g5 Rb3 47. g6 Rxb5 48. g7 Rg5 49. Rxb6 Bh7
+50. f4 c3 51. fxg5 c2 52. Rh6 c1=Q+ 53. Kh2 Qf4+ 54. Kh1 Bg8 55. Rh8 Bd5 0-1
+
+[Event "Rilton Cup"]
+[Site "Stockholm"]
+[Date "2025.12.31"]
+[Round "5"]
+[White "Sai"]
+[Black "Li Di"]
+[Result "1-0"]
+[ECO "B15"]
+[BlackElo "2549"]
+[Annotator "thes"]
+[PlyCount "127"]
+[EventDate "2025.12.27"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "SWE"]
+[SourceVersionDate "2015.05.24"]
+
+{[%evp 0,34,20,10,65,71,79,36,36,28,31,31,31,24,27,12,26,33,27,45,39,23,49,3,
+72,47,71,57,64,42,57,43,34,43,61,51,69]} 1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4
+Nf6 5. Nxf6+ exf6 6. c3 Bd6 7. Bd3 O-O 8. Ne2 Re8 9. O-O Nd7 10. Ng3 g6 11. Bh6
+Nf8 12. Ne4 Be7 13. Re1 Ne6 14. Qd2 (14. a4 Bf8 (14... f5 15. Nd2 Ng7 16. Qb3
+Rb8 17. Qc2 (17. Bc4 Be6 18. Bxe6 Nxe6 19. Rxe6 fxe6 20. Qxe6+ Kh8 21. Bf4 Bf6
+$15) 17... Be6 18. b4 {[%cal Gd2f3]}) 15. Bxf8 Kxf8 (15... Rxf8 16. Bc4 $14)
+16. a5) 14... Bd7 15. h4 Qa5 $6 16. Bc4 b5 $2 17. Bxe6 Bxe6 (17... fxe6 18. Qf4
+Qd8 19. g4 $18) 18. Qf4 Qd8 (18... Bf5 19. Nd6 Bxd6 20. Qxd6 Be6 (20... Rxe1+
+21. Rxe1 Qd8 22. Re8+ Qxe8 23. Qxf6 $18) 21. Qxc6 Rac8 22. Qf3 $18) 19. g4 Kh8
+(19... b4 20. Re3 Rb8 21. Rae1 bxc3 22. bxc3 Rb5 23. c4 Ra5 24. Rd3 Bd7 25. Nc5
+$18) 20. g5 Bf5 21. gxf6 Bxf6 22. Nd6 (22. Nxf6 Qxf6 23. Bg5 Qg7 24. Qd6 Be6
+25. Qxc6 $18 {is also winning but what I played is clearer}) 22... Rxe1+ 23.
+Rxe1 Qc7 (23... Qd7 24. Bg5 Bxg5 25. hxg5 Kg8 26. Qe5 Bd3 27. f3 $18) 24. Bg5
+Bxg5 25. hxg5 Kg8 26. Qe5 Be6 27. Nxf7 Qxe5 28. Nxe5 Bd5 29. b3 Re8 30. Re3 Kg7
+31. c4 Bg8 32. cxb5 cxb5 33. Rc3 Rf8 34. Rc7+ Kh8 35. Ng4 Rf5 36. Rc5 a5 37.
+Nf6 (37. Rxf5 gxf5 38. Nf6 $18 {is quicker}) 37... Be6 38. Rxf5 (38. f4 $18)
+38... Bxf5 39. a3 $4 {only blunder in an otherwise perfect game. This lets the
+win slip away} (39. f3 Kg7 40. Ne4 $18) 39... b4 $4 (39... Kg7 $11 40. Ne8+ (
+40. b4 axb4 41. axb4 h5 $1 $11) 40... Kf7 41. Nc7 (41. Nd6+ Ke6 42. Nxb5 Kd5
+$11) 41... b4 42. axb4 axb4 43. Na6 Ke6 44. Nxb4 Be4 $11) 40. axb4 axb4 41. Nd5
+Be6 42. Nxb4 Bxb3 43. d5 Kg7 44. d6 Kf7 45. Nd3 Ke6 46. Nc5+ Kxd6 47. Nxb3 Ke5
+48. Kg2 Kf4 49. Nd4 Kxg5 50. Kg3 h6 51. f4+ Kf6 52. Kg4 Ke7 53. Kf3 Kd7 54. Ke4
+Kd6 55. Nf3 Ke6 56. Ne5 Kf6 57. Ng4+ Kg7 58. Ke5 h5 59. Nh2 h4 60. Ng4 Kf7 61.
+Nf2 Kg7 62. Nh3 Kh6 63. Ke4 Kh5 64. Kf3 1-0
+
+[Event "Quebec op"]
+[Site "Quebec"]
+[Date "2018.07.22"]
+[Round "3"]
+[White "Sai, Krishna GV"]
+[Black "Sambuev, Bator"]
+[Result "1-0"]
+[ECO "B35"]
+[WhiteElo "2388"]
+[BlackElo "2514"]
+[Annotator "thes"]
+[PlyCount "71"]
+[EventDate "2018.07.21"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "CAN"]
+[SourceTitle "CBM 186 Extra"]
+[Source "ChessBase"]
+[SourceDate "2018.08.24"]
+[SourceVersion "1"]
+[SourceVersionDate "2018.08.24"]
+[SourceQuality "1"]
+
+{[%evp 0,71,34,37,51,51,41,41,76,75,69,58,57,43,75,38,42,15,47,36,36,40,59,37,
+32,36,161,159,167,147,166,159,172,192,247,224,227,243,239,239,238,233,227,229,
+255,239,239,239,240,240,253,258,259,258,250,249,254,275,326,336,359,254,336,
+222,296,325,305,327,349,357,624,633,631,640]} 1. e4 c5 2. Nf3 Nc6 3. Nc3 g6 4.
+d4 cxd4 5. Nxd4 Bg7 6. Be3 Nf6 7. Bc4 (7. f3 O-O 8. Qd2 d5) 7... O-O 8. Bb3 Re8
+(8... Na5 9. e5 Ne8 (9... Nxb3 10. exf6 Nxa1 11. fxg7 Kxg7 12. Qxa1) (9... Nh5
+10. g4) 10. Bxf7+ Rxf7 (10... Kxf7 11. Ne6 Kxe6 12. Qd5+ Kf5 13. g4+ Kxg4 14.
+Rg1+ Kf5 (14... Kh4 15. Qe4+) (14... Kh3 15. Qg2+) (14... Kh5 15. Rg5+) 15.
+Rg5#) 11. Ne6) 9. O-O d6 10. h3 Na5 11. Qd2 b6 12. Bh6 Bb7 13. Bxf7+ Kxf7 14.
+Bxg7 Nc4 15. Qh6 Nh5 16. f4 Rg8 17. f5 Rxg7 18. fxg6+ Kg8 19. Ne6 Rxg6 20. Qxh5
+Qc8 (20... Rxe6 21. Qf7+) 21. Rf8+ Qxf8 22. Nxf8 Rxf8 23. Nd5 Rg7 24. Rf1 Rxf1+
+25. Kxf1 Rf7+ 26. Kg1 Ne5 27. Qg5+ Kf8 28. Nc7 Rf6 29. Qh5 Ng6 30. Qg4 Ne5 31.
+Qe2 Ng6 32. Qc4 Ne5 33. Ne6+ Ke8 34. Qc7 Bc6 35. Qc8+ Kf7 36. Nd8+ 1-0
+
+[Event "Rilton Cup"]
+[Site "Stockholm"]
+[Date "2026.01.03"]
+[Round "7"]
+[White "Sai"]
+[Black "Erik Blonqvist"]
+[Result "1-0"]
+[ECO "C60"]
+[BlackElo "2490"]
+[Annotator "thes"]
+[PlyCount "95"]
+[EventDate "2025.12.27"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "SWE"]
+[SourceVersionDate "2015.05.24"]
+
+{[%evp 0,57,20,10,30,10,10,11,85,14,35,41,53,61,60,40,35,38,46,47,41,28,28,11,
+19,24,54,55,55,62,67,23,48,23,52,90,112,71,59,68,53,27,38,54,42,0,24,82,19,33,
+95,100,100,88,94,67,82,22,33,59]} 1. e4 e5 2. Nf3 Nc6 3. Bb5 g6 4. c3 Bg7 5. d4
+exd4 6. cxd4 a6 7. Ba4 b5 8. Bc2 d5 9. exd5 Nce7 10. Nc3 Nf6 11. O-O O-O 12.
+Bg5 Qd6 13. a4 Bb7 14. axb5 axb5 15. Nxb5 Qb6 16. Nc3 Qxb2 17. Na4 Qb5 18. Re1
+(18. Rb1 {This is the correct move order. I thought I could maybe extract more
+with Re1 first but I totally missed Bxd5} Qxd5 19. Re1 Rfe8 20. Re5 Qc6 21. Nc5
+Bc8 22. Ba4 $18) 18... Bxd5 19. Ne5 Rfe8 20. Rb1 Qa5 21. Nc5 Nc6 22. Bd2 Qa3
+23. Ba4 Nxe5 24. Bxe8 Nf3+ 25. gxf3 Nxe8 26. Re3 Qa7 27. Bc3 Nd6 28. Ra1 Qb8
+29. Rxa8 Qxa8 30. Qa4 Qb8 31. Ne4 Nb5 32. Bb2 c6 33. Nc3 Be6 34. Nxb5 cxb5 35.
+Qb4 Bf8 36. Qc3 b4 37. Qc6 Bh3 38. Re8 Qf4 39. Qc5 Qh6 40. Qe5 Qd2 41. d5 Qd1+
+42. Qe1 Qxd5 43. Bf6 Qd7 44. Rd8 Qc7 45. Be7 b3 46. Rxf8+ Kg7 47. Qa1+ Kh6 48.
+Rxf7 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "2022.10.08"]
+[Round "?"]
+[White "Sai"]
+[Black "Isan"]
+[Result "1-0"]
+[ECO "B99"]
+[Annotator "saikr"]
+[PlyCount "69"]
+[SourceVersionDate "2015.05.24"]
+
+{[%evp 0,17,16,28,46,51,106,88,88,49,49,29,80,61,90,34,63,14,36,25]} 1. e4 c5
+2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 h6 (7... Be7 8. Qf3
+Qc7 9. O-O-O) 8. Bh4 Be7 9. Qf3 Qc7 10. O-O-O Nbd7 11. Be2 Rg8 12. Bg3 g5 (
+12... b5 13. e5 Bb7 14. exf6 (14. Qf2 dxe5 15. fxe5) 14... Bxf3 15. Bxf3 Bxf6
+16. Bxa8 Qa7 $17) 13. e5 g4 14. Qf2 dxe5 15. fxe5 Nh5 16. Nd5 Bg5+ 17. Kb1 Qc5
+18. Rhf1 Rf8 (18... Rg7 19. Bxg4 Nxg3 20. Qxg3 exd5 21. Nf5 Rh7 22. Nd6+ Kf8
+23. Bh5 $18) 19. Nxe6 fxe6 20. Qxc5 Nxc5 21. Nc7+ Ke7 22. Rxf8 Kxf8 23. Nxa8
+Nxg3 24. hxg3 Nd7 25. Bxg4 Ke7 26. Bf3 b5 27. Rd4 Be3 28. Re4 Ba7 29. a4 bxa4
+30. Rxa4 Nxe5 31. Be2 Nd7 32. Nc7 Nc5 33. Ra3 e5 34. b4 Ne4 35. Bxa6 1-0
+
