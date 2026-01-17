@@ -37,7 +37,7 @@ description: A collection of my best games against Grandmasters and Internationa
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
 <script>
-  // Set base URL for PGN file - use relative path for GitHub Pages
-  window.CHESS_PGN_PATH = "{{ '/assets/pgn/WinsAgainstGMs.pgn' | relative_url }}";
+  // Set base URL for PGN file - use absolute path from root
+  window.CHESS_PGN_PATH = "/assets/pgn/WinsAgainstGMs.pgn";
 </script>
 <script src="{{ '/assets/js/chess-viewer.js' | relative_url }}"></script>
