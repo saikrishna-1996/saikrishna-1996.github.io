@@ -10,12 +10,17 @@
   let moveHistory = [];
 
   // Wait for all dependencies
-  function waitForDependencies(callback, maxAttempts = 50) {
-    if (typeof Chess !== 'undefined' && typeof Chessboard !== 'undefined') {
+  function waitForDependencies(callback, maxAttempts = 100) {
+    if (typeof Chess !== 'undefined' && typeof Chessboard !== 'undefined' && typeof jQuery !== 'undefined') {
       callback();
     } else if (maxAttempts > 0) {
       setTimeout(() => waitForDependencies(callback, maxAttempts - 1), 100);
     } else {
+      console.error('Dependencies check failed:', {
+        Chess: typeof Chess,
+        Chessboard: typeof Chessboard,
+        jQuery: typeof jQuery
+      });
       showError('Failed to load chess libraries. Please refresh the page.');
     }
   }
