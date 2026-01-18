@@ -40,47 +40,12 @@ description: A collection of my best games against Grandmasters and Internationa
   window.CHESS_PGN_PATH = '{{ "/assets/pgn/WinsAgainstGMs.pgn" | relative_url }}';
 </script>
 
+<!-- Load jQuery first (required by chessboard-js) -->
+<script src="//code.jquery.com/jquery-{{ site.jquery_version }}.min.js"></script>
+
 <script>
-  // Load chess libraries - ensure proper loading order
+  // Load chess libraries in proper order after jQuery
   (function() {
-    function ensureJQuery(callback) {
-      if (typeof jQuery !== 'undefined') {
-        callback();
-        return;
-      }
-      
-      // Check if jQuery script tag exists (from hemline.html)
-      var jqScript = document.querySelector('script[src*="jquery"]');
-      if (jqScript && !jqScript.onload) {
-        // jQuery is being loaded, wait for it
-        var checkCount = 0;
-        var checkInterval = setInterval(function() {
-          checkCount++;
-          if (typeof jQuery !== 'undefined') {
-            clearInterval(checkInterval);
-            callback();
-          } else if (checkCount > 100) {
-            // Timeout after 10 seconds
-            clearInterval(checkInterval);
-            loadJQueryDirectly(callback);
-          }
-        }, 100);
-      } else {
-        // Load jQuery directly
-        loadJQueryDirectly(callback);
-      }
-    }
-    
-    function loadJQueryDirectly(callback) {
-      var jq = document.createElement('script');
-      jq.src = '//code.jquery.com/jquery-{{ site.jquery_version }}.min.js';
-      jq.onload = callback;
-      jq.onerror = function() {
-        console.error('Failed to load jQuery');
-      };
-      document.head.appendChild(jq);
-    }
-    
     function loadChessJs(callback) {
       if (typeof Chess !== 'undefined') {
         callback();
@@ -102,11 +67,12 @@ description: A collection of my best games against Grandmasters and Internationa
         return;
       }
       
-      // Double-check jQuery is available
+      // Ensure jQuery is available
       if (typeof jQuery === 'undefined') {
-        ensureJQuery(function() {
+        console.error('jQuery not available for chessboard');
+        setTimeout(function() {
           loadChessboardJs(callback);
-        });
+        }, 100);
         return;
       }
       
@@ -128,22 +94,27 @@ description: A collection of my best games against Grandmasters and Internationa
       document.head.appendChild(viewerJs);
     }
     
-    // Start loading immediately when DOM is ready
-    function init() {
-      ensureJQuery(function() {
+    // Wait for jQuery to be available, then load chess libraries
+    function waitForJQuery() {
+      if (typeof jQuery !== 'undefined') {
+        console.log('jQuery ready, loading chess libraries...');
         loadChessJs(function() {
+          console.log('chess.js loaded');
           loadChessboardJs(function() {
+            console.log('chessboard.js loaded');
             loadViewer();
           });
         });
-      });
+      } else {
+        setTimeout(waitForJQuery, 50);
+      }
     }
     
+    // Start loading when DOM is ready
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', init);
+      document.addEventListener('DOMContentLoaded', waitForJQuery);
     } else {
-      // DOM already ready, start immediately
-      init();
+      waitForJQuery();
     }
   })();
 </script>
