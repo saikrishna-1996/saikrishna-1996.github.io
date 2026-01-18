@@ -3,83 +3,98 @@
   'use strict';
 
   let board = null;
-  let game = new Chess();
+  let game = null;
   let games = [];
   let currentGameIndex = 0;
   let currentMoveIndex = 0;
   let moveHistory = [];
-  let pgnText = '';
+
+  // Wait for all dependencies
+  function waitForDependencies(callback, maxAttempts = 50) {
+    if (typeof Chess !== 'undefined' && typeof Chessboard !== 'undefined') {
+      callback();
+    } else if (maxAttempts > 0) {
+      setTimeout(() => waitForDependencies(callback, maxAttempts - 1), 100);
+    } else {
+      showError('Failed to load chess libraries. Please refresh the page.');
+    }
+  }
 
   // Initialize the viewer
   function init() {
     console.log('Initializing chess viewer...');
     
-    // Wait for libraries to load
-    if (typeof Chess === 'undefined' || typeof Chessboard === 'undefined') {
-      console.log('Waiting for libraries to load...');
-      setTimeout(init, 100);
-      return;
-    }
-
     const boardEl = document.getElementById('board');
     if (!boardEl) {
       console.error('Board element not found!');
-      showError('Chess board container not found.');
       return;
     }
 
-    const config = {
-      draggable: false,
-      position: 'start',
-      pieceTheme: 'https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/img/chesspieces/wikipedia/{piece}.png',
-      onMoveEnd: onMoveEnd
-    };
+    waitForDependencies(() => {
+      game = new Chess();
+      
+      const config = {
+        draggable: false,
+        position: 'start',
+        pieceTheme: 'https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/img/chesspieces/wikipedia/{piece}.png'
+      };
 
-    try {
-      board = Chessboard('board', config);
-      console.log('Chessboard initialized successfully');
-    } catch (e) {
-      console.error('Error initializing chessboard:', e);
-      showError('Failed to initialize chessboard: ' + e.message);
-      return;
-    }
-
-    // Load PGN file
-    loadPGN();
-
-    // Setup event listeners
-    setupEventListeners();
+      try {
+        board = Chessboard('board', config);
+        console.log('Chessboard initialized');
+        
+        // Load PGN file
+        loadPGN();
+        
+        // Setup event listeners
+        setupEventListeners();
+      } catch (e) {
+        console.error('Error initializing chessboard:', e);
+        showError('Failed to initialize chessboard: ' + e.message);
+      }
+    });
   }
 
   // Load PGN file
   function loadPGN() {
-    // Use path from window variable set by Jekyll, or fallback to relative path
-    const pgnPath = window.CHESS_PGN_PATH || './assets/pgn/WinsAgainstGMs.pgn';
+    // Get path from window variable or use relative path
+    let pgnPath = window.CHESS_PGN_PATH;
+    
+    // If not set or empty, construct path relative to site root
+    if (!pgnPath || pgnPath.trim() === '' || pgnPath === 'undefined') {
+      // Try absolute path from root (works for GitHub Pages)
+      pgnPath = '/assets/pgn/WinsAgainstGMs.pgn';
+    }
+    
     console.log('Loading PGN from:', pgnPath);
     
     fetch(pgnPath)
       .then(response => {
-        console.log('PGN fetch response:', response.status, response.statusText);
+        console.log('Response status:', response.status, 'for path:', pgnPath);
         if (!response.ok) {
-          throw new Error(`PGN file not found (${response.status}). Please ensure WinsAgainstGMs.pgn exists.`);
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         return response.text();
       })
       .then(text => {
         console.log('PGN loaded, length:', text.length);
-        pgnText = text;
+        if (!text || text.trim().length === 0) {
+          throw new Error('PGN file is empty');
+        }
         parsePGN(text);
         console.log('Parsed games:', games.length);
         if (games.length > 0) {
           loadGame(0);
           populateGameSelector();
         } else {
-          showError('No games found in PGN file. Please check the file format.');
+          showError('No games found in PGN file. Check console for details.');
         }
       })
       .catch(error => {
         console.error('Error loading PGN:', error);
-        showError('Could not load PGN file: ' + error.message + '<br>Path attempted: ' + pgnPath);
+        console.error('Path attempted:', pgnPath);
+        console.error('Current location:', window.location.href);
+        showError('Could not load PGN file: ' + error.message + '<br>Path attempted: ' + pgnPath + '<br>Check browser console (F12) for details.');
       });
   }
 
@@ -87,43 +102,44 @@
   function parsePGN(text) {
     games = [];
     
-    if (!text || text.trim().length === 0) {
-      console.warn('PGN text is empty');
-      return;
-    }
+    // Split by double newlines - this is the standard PGN separator
+    const parts = text.split(/\n\s*\n/).filter(p => p.trim().length > 0);
     
-    // Split by double newlines (standard PGN separator)
-    const parts = text.split(/\n\s*\n/);
+    console.log('Split into', parts.length, 'parts');
     
-    parts.forEach(part => {
+    parts.forEach((part, idx) => {
       const trimmed = part.trim();
-      // A valid game should have [Event tag and moves (starting with 1.)
-      if (trimmed && trimmed.length > 50 && trimmed.includes('[Event') && trimmed.match(/\n\s*1\./)) {
+      // A valid game should have [Event tag and moves
+      if (trimmed.includes('[Event') && (trimmed.includes('1.') || trimmed.match(/\d+\.\s+\w/))) {
         games.push(trimmed);
+        console.log('Found game', games.length, ':', trimmed.substring(0, 100));
+      } else {
+        console.log('Skipping part', idx, ':', trimmed.substring(0, 100));
       }
     });
     
-    // If that didn't work, try regex matching [Event blocks
+    // If still no games, try a more lenient approach
     if (games.length === 0) {
-      const gameRegex = /(\[Event[^\]]*\]\s*\n[\s\S]*?)(?=\n\s*\[Event|$)/g;
-      let match;
-      while ((match = gameRegex.exec(text)) !== null) {
-        const gameText = match[1].trim();
-        if (gameText && gameText.length > 50) {
-          games.push(gameText);
+      console.log('Trying alternative parsing...');
+      // Look for [Event blocks followed by moves
+      const gameBlocks = text.split(/(?=\[Event)/);
+      gameBlocks.forEach(block => {
+        const trimmed = block.trim();
+        if (trimmed.length > 100 && trimmed.includes('[Event')) {
+          games.push(trimmed);
         }
-      }
+      });
     }
     
-    console.log('Parsed', games.length, 'game(s) from PGN');
-    if (games.length === 0) {
-      console.error('No games found! PGN text preview:', text.substring(0, 500));
-    }
+    console.log('Total games parsed:', games.length);
   }
 
   // Load a specific game
   function loadGame(index) {
-    if (index < 0 || index >= games.length) return;
+    if (index < 0 || index >= games.length) {
+      console.error('Invalid game index:', index);
+      return;
+    }
 
     currentGameIndex = index;
     currentMoveIndex = 0;
@@ -142,11 +158,12 @@
     const movesMatch = gameText.match(/\]([\s\S]*)/);
     let movesText = movesMatch ? movesMatch[1] : '';
     
-    // Remove all annotations: clock annotations, evaluation annotations, comments, etc.
-    movesText = movesText.replace(/\{\s*\[%[^\]]+\]\s*\}/g, ''); // Remove [%clk], [%eval], [%evp], etc.
-    movesText = movesText.replace(/\{[^}]*\}/g, ''); // Remove all comments in braces
-    movesText = movesText.replace(/\$\d+/g, ''); // Remove move quality annotations like $1, $5, etc.
-    movesText = movesText.replace(/\[%[^\]]+\]/g, ''); // Remove any remaining annotations
+    // Remove all annotations
+    movesText = movesText.replace(/\{\s*\[%[^\]]+\]\s*\}/g, ''); // [%clk], [%eval], etc.
+    movesText = movesText.replace(/\{[^}]*\}/g, ''); // Comments in braces
+    movesText = movesText.replace(/\$\d+/g, ''); // Move quality markers
+    movesText = movesText.replace(/\[%[^\]]+\]/g, ''); // Any remaining annotations
+    movesText = movesText.trim();
 
     // Update header
     const headerEl = document.getElementById('game-header');
@@ -163,30 +180,35 @@
 
     // Parse and load moves
     try {
-      // Clean up the moves text more thoroughly
-      movesText = movesText.trim();
+      if (!movesText) {
+        throw new Error('No moves found in game');
+      }
       
-      // Try loading with chess.js
       const loadResult = game.load_pgn(movesText);
       if (!loadResult) {
-        throw new Error('Failed to load PGN - invalid format');
+        throw new Error('Failed to parse PGN moves');
       }
       
       moveHistory = game.history({ verbose: true });
       currentMoveIndex = moveHistory.length;
       updateBoard();
       updateMoveList();
+      console.log('Game loaded successfully, moves:', moveHistory.length);
     } catch (e) {
       console.error('Error loading game:', e);
-      console.error('Moves text:', movesText.substring(0, 200));
+      console.error('Moves text sample:', movesText.substring(0, 300));
       showError('Error parsing game moves: ' + e.message);
     }
   }
 
   // Update board position
   function updateBoard() {
-    if (!board) return;
-    board.position(game.fen());
+    if (!board || !game) return;
+    try {
+      board.position(game.fen());
+    } catch (e) {
+      console.error('Error updating board:', e);
+    }
   }
 
   // Update move list display
@@ -215,7 +237,7 @@
     html += '</div>';
     moveListEl.innerHTML = html;
     
-    // Add click handlers to moves
+    // Add click handlers
     moveListEl.querySelectorAll('.move').forEach(moveEl => {
       const moveIndex = parseInt(moveEl.getAttribute('data-move-index'));
       if (!isNaN(moveIndex) && moveIndex >= 0) {
@@ -250,23 +272,18 @@
 
   // Setup event listeners
   function setupEventListeners() {
-    // Button controls
     document.getElementById('btn-first')?.addEventListener('click', () => goToMove(0));
     document.getElementById('btn-prev')?.addEventListener('click', () => goToMove(currentMoveIndex - 1));
     document.getElementById('btn-next')?.addEventListener('click', () => goToMove(currentMoveIndex + 1));
     document.getElementById('btn-last')?.addEventListener('click', () => goToMove(moveHistory.length));
     document.getElementById('btn-flip')?.addEventListener('click', () => {
-      if (board) {
-        board.flip();
-      }
+      if (board) board.flip();
     });
 
-    // Game selector
     document.getElementById('game-select')?.addEventListener('change', (e) => {
       loadGame(parseInt(e.target.value));
     });
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
       
@@ -297,15 +314,17 @@
     if (!selectEl) return;
 
     selectEl.innerHTML = '';
-    games.forEach((game, index) => {
+    games.forEach((gameText, index) => {
       const option = document.createElement('option');
       option.value = index;
-      const headerMatch = game.match(/\[Event\s+"([^"]+)"/);
-      const whiteMatch = game.match(/\[White\s+"([^"]+)"/);
-      const blackMatch = game.match(/\[Black\s+"([^"]+)"/);
-      option.textContent = `Game ${index + 1}: ${whiteMatch ? whiteMatch[1] : 'White'} vs ${blackMatch ? blackMatch[1] : 'Black'}`;
+      const headerMatch = gameText.match(/\[Event\s+"([^"]+)"/);
+      const whiteMatch = gameText.match(/\[White\s+"([^"]+)"/);
+      const blackMatch = gameText.match(/\[Black\s+"([^"]+)"/);
+      const name = headerMatch ? headerMatch[1] : `Game ${index + 1}`;
+      option.textContent = `${index + 1}. ${name}`;
       selectEl.appendChild(option);
     });
+    console.log('Game selector populated with', games.length, 'games');
   }
 
   // Show error message
@@ -314,23 +333,13 @@
     if (container) {
       container.innerHTML = `<div class="error-message"><p>${message}</p></div>`;
     }
+    console.error('Chess viewer error:', message);
   }
 
-  // Callback for move end
-  function onMoveEnd() {
-    // Not used since board is not draggable
+  // Start initialization
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
-
-  // Initialize when DOM and libraries are ready
-  function startInit() {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(init, 100);
-      });
-    } else {
-      setTimeout(init, 100);
-    }
-  }
-  
-  startInit();
 })();

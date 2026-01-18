@@ -36,13 +36,54 @@ description: A collection of my best games against Grandmasters and Internationa
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
 
 <script>
-  // Set base URL for PGN file - use absolute path from root
-  window.CHESS_PGN_PATH = "{{ '/assets/pgn/WinsAgainstGMs.pgn' | prepend: site.baseurl | prepend: site.url }}";
-  if (!window.CHESS_PGN_PATH || window.CHESS_PGN_PATH === '') {
-    window.CHESS_PGN_PATH = '/assets/pgn/WinsAgainstGMs.pgn';
-  }
+  // Set base URL for PGN file - use relative_url for proper path resolution
+  window.CHESS_PGN_PATH = '{{ "/assets/pgn/WinsAgainstGMs.pgn" | relative_url }}';
 </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
-<script src="{{ '/assets/js/chess-viewer.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<script>
+  // Load chess libraries after jQuery is available (jQuery loads in hemline.html)
+  (function() {
+    function loadChessScripts() {
+      if (typeof jQuery === 'undefined') {
+        setTimeout(loadChessScripts, 50);
+        return;
+      }
+      
+      // Load chess.js if not already loaded
+      if (typeof Chess === 'undefined') {
+        var chessJs = document.createElement('script');
+        chessJs.src = 'https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js';
+        chessJs.onload = loadChessboard;
+        document.body.appendChild(chessJs);
+      } else {
+        loadChessboard();
+      }
+    }
+    
+    function loadChessboard() {
+      // Load chessboard.js after chess.js (requires jQuery)
+      if (typeof Chessboard === 'undefined') {
+        var chessboardJs = document.createElement('script');
+        chessboardJs.src = 'https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js';
+        chessboardJs.onload = loadViewer;
+        document.body.appendChild(chessboardJs);
+      } else {
+        loadViewer();
+      }
+    }
+    
+    function loadViewer() {
+      // Load chess-viewer.js after chessboard.js
+      var viewerJs = document.createElement('script');
+      viewerJs.src = '{{ "/assets/js/chess-viewer.js" | relative_url }}';
+      document.body.appendChild(viewerJs);
+    }
+    
+    // Start loading after DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadChessScripts);
+    } else {
+      loadChessScripts();
+    }
+  })();
+</script>
