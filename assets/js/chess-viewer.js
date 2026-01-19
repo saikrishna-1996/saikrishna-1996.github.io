@@ -55,6 +55,15 @@
         showError('Chessboard library not loaded');
         return;
       }
+      
+      // Verify Chessboard is a function
+      if (typeof Chessboard !== 'function') {
+        console.error('Chessboard is not a function, type:', typeof Chessboard);
+        showError('Chessboard is not a function. Type: ' + typeof Chessboard);
+        return;
+      }
+      
+      console.log('Chessboard is a function, ready to initialize');
       if (typeof jQuery === 'undefined') {
         showError('jQuery not loaded');
         return;
@@ -90,14 +99,31 @@
           });
         }
         
-        // Initialize chessboard
-        board = Chessboard('board', config);
+        // Initialize chessboard - try multiple methods
+        try {
+          // Method 1: Direct call (standard way)
+          board = Chessboard('board', config);
+        } catch (e1) {
+          console.warn('Method 1 failed, trying jQuery method:', e1);
+          try {
+            // Method 2: Using jQuery
+            board = jQuery('#board').chessboard(config);
+          } catch (e2) {
+            console.warn('Method 2 failed, trying window.Chessboard:', e2);
+            // Method 3: Using window object
+            if (window.Chessboard) {
+              board = window.Chessboard('board', config);
+            } else {
+              throw new Error('All initialization methods failed');
+            }
+          }
+        }
         
         if (!board) {
           throw new Error('Chessboard returned null/undefined');
         }
         
-        console.log('Chessboard initialized successfully');
+        console.log('Chessboard initialized successfully, board object:', board);
         
         // Verify board is actually rendered after a short delay
         setTimeout(() => {
