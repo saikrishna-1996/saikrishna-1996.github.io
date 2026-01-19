@@ -42,6 +42,6 @@ description: A collection of my best games against Grandmasters and Internationa
 
 <!-- Load all required libraries in order -->
 <script src="//code.jquery.com/jquery-{{ site.jquery_version }}.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
 <script src="{{ '/assets/js/chess-viewer.js' | relative_url }}"></script>
