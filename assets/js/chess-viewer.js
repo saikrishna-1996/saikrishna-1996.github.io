@@ -186,9 +186,12 @@
       }
     }
     
+    // Debug: log raw text before cleaning
+    console.log('Raw text after headers (first 500 chars):', movesText.substring(0, 500));
+    
     // Remove all annotations and clean up
-    // First remove multi-line comments in braces
-    movesText = movesText.replace(/\{[^}]*\}/gs, ''); // Comments in braces (including multi-line)
+    // Remove multi-line comments in braces - use [\s\S] to match newlines
+    movesText = movesText.replace(/\{[\s\S]*?\}/g, ''); // Comments in braces (including multi-line, non-greedy)
     movesText = movesText.replace(/\{\s*\[%[^\]]+\]\s*\}/g, ''); // [%clk], [%eval], etc.
     movesText = movesText.replace(/\$\d+/g, ''); // Move quality markers
     movesText = movesText.replace(/\[%[^\]]+\]/g, ''); // Any remaining annotations
