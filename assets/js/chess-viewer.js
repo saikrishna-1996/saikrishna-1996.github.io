@@ -125,23 +125,37 @@
         
         console.log('Chessboard initialized successfully, board object:', board);
         
+        // Force initial render by setting position explicitly
+        if (board && typeof board.position === 'function') {
+          board.position('start');
+          console.log('Set initial position to start');
+        }
+        
         // Verify board is actually rendered after a short delay
         setTimeout(() => {
           var boardSquares = jQuery('#board .square-55d63');
+          var boardPieces = jQuery('#board img');
           console.log('Board squares found:', boardSquares.length);
+          console.log('Board pieces found:', boardPieces.length);
+          
           if (boardSquares.length === 0) {
-            console.warn('No board squares found - attempting to re-render');
-            // Try to set position again to force render
-            if (board && board.position) {
+            console.error('No board squares found - board did not render!');
+            console.log('Board element HTML:', jQuery('#board').html());
+            console.log('Board element computed style:', window.getComputedStyle(boardElement[0]));
+          } else if (boardPieces.length === 0) {
+            console.warn('Board squares found but no pieces - attempting to re-render');
+            if (board && typeof board.position === 'function') {
               board.position('start');
             }
           } else {
-            console.log('Board rendered successfully with', boardSquares.length, 'squares');
+            console.log('Board rendered successfully with', boardSquares.length, 'squares and', boardPieces.length, 'pieces');
           }
-        }, 200);
+        }, 300);
         
-        // Load PGN file
-        loadPGN();
+        // Load PGN file after a short delay to ensure board is rendered
+        setTimeout(() => {
+          loadPGN();
+        }, 100);
         
         // Setup event listeners
         setupEventListeners();
