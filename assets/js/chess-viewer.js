@@ -177,7 +177,10 @@
     let movesText = '';
     if (lastHeaderLineIndex >= 0) {
       // Get everything after the last header line
-      movesText = lines.slice(lastHeaderLineIndex + 1).join('\n');
+      const remainingLines = lines.slice(lastHeaderLineIndex + 1);
+      console.log('Lines after header:', remainingLines.length);
+      console.log('First few lines after header:', remainingLines.slice(0, 5));
+      movesText = remainingLines.join('\n');
     } else {
       // Fallback: find last ] character
       const lastBracket = gameText.lastIndexOf(']');
@@ -188,6 +191,7 @@
     
     // Debug: log raw text before cleaning
     console.log('Raw text after headers (first 500 chars):', movesText.substring(0, 500));
+    console.log('Raw text length before cleaning:', movesText.length);
     
     // Remove all annotations and clean up
     // Remove multi-line comments in braces - use [\s\S] to match newlines
