@@ -159,15 +159,39 @@
     const dateMatch = gameText.match(/\[Date\s+"([^"]+)"/);
     const siteMatch = gameText.match(/\[Site\s+"([^"]+)"/);
 
-    // Extract moves (everything after the last ])
-    const movesMatch = gameText.match(/\]([\s\S]*)/);
-    let movesText = movesMatch ? movesMatch[1] : '';
+    // Extract moves - find the last header tag and get everything after it
+    // Headers are on separate lines like [Event "..."], so find the last line with ]
+    const lines = gameText.split('\n');
+    let movesStartIndex = -1;
     
-    // Remove all annotations
+    // Find the last line that contains a header tag (starts with [ and ends with ])
+    for (let i = lines.length - 1; i >= 0; i--) {
+      const line = lines[i].trim();
+      if (line.match(/^\[.+\]$/)) {
+        // Found the last header line, moves start after this
+        movesStartIndex = i + 1;
+        break;
+      }
+    }
+    
+    // If we found the last header, get everything after it
+    let movesText = '';
+    if (movesStartIndex >= 0) {
+      movesText = lines.slice(movesStartIndex).join('\n');
+    } else {
+      // Fallback: find everything after the last ]
+      const lastBracketIndex = gameText.lastIndexOf(']');
+      if (lastBracketIndex >= 0) {
+        movesText = gameText.substring(lastBracketIndex + 1);
+      }
+    }
+    
+    // Remove all annotations and clean up
     movesText = movesText.replace(/\{\s*\[%[^\]]+\]\s*\}/g, ''); // [%clk], [%eval], etc.
-    movesText = movesText.replace(/\{[^}]*\}/g, ''); // Comments in braces
+    movesText = movesText.replace(/\{[^}]*\}/g, ''); // Comments in braces (including multi-line)
     movesText = movesText.replace(/\$\d+/g, ''); // Move quality markers
     movesText = movesText.replace(/\[%[^\]]+\]/g, ''); // Any remaining annotations
+    movesText = movesText.replace(/^\s*[\r\n]+/gm, ''); // Remove leading blank lines
     movesText = movesText.trim();
 
     // Update header
