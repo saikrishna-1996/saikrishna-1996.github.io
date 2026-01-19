@@ -145,6 +145,9 @@
     moveHistory = [];
 
     const gameText = games[index];
+    console.log('Game text length:', gameText.length);
+    console.log('Game text (first 500 chars):', gameText.substring(0, 500));
+    console.log('Game text (last 500 chars):', gameText.substring(Math.max(0, gameText.length - 500)));
     const headerMatch = gameText.match(/\[Event\s+"([^"]+)"/);
     const whiteMatch = gameText.match(/\[White\s+"([^"]+)"/);
     const blackMatch = gameText.match(/\[Black\s+"([^"]+)"/);
