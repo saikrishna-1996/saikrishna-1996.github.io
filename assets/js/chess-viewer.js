@@ -160,57 +160,45 @@
     const siteMatch = gameText.match(/\[Site\s+"([^"]+)"/);
 
     // Extract moves - find everything after the last header tag
-    // Headers are like [Event "..."], [Site "..."], etc.
-    // Find the last occurrence of a header pattern: [Something "value"]
-    let movesText = '';
-    
-    // Method 1: Find last header line (line starting with [ and containing ])
+    // Headers are like [Event "..."], [Site "..."], etc. on separate lines
     const lines = gameText.split('\n');
     let lastHeaderLineIndex = -1;
     
+    // Find the last line that starts with [ and ends with ]
     for (let i = lines.length - 1; i >= 0; i--) {
       const line = lines[i].trim();
-      // Match header lines like [Event "..."] or [SourceVersionDate "..."]
-      if (line.match(/^\[[^\]]+\]$/) || line.match(/^\[[^\]]+"[^"]*"\]$/)) {
+      // Match any header line: starts with [ and ends with ]
+      if (line.startsWith('[') && line.endsWith(']')) {
         lastHeaderLineIndex = i;
         break;
       }
     }
     
+    let movesText = '';
     if (lastHeaderLineIndex >= 0) {
       // Get everything after the last header line
       movesText = lines.slice(lastHeaderLineIndex + 1).join('\n');
     } else {
-      // Fallback: Find last ] that's part of a header (followed by newline or end)
-      const headerPattern = /\[[^\]]+\]/g;
-      let lastMatch = null;
-      let match;
-      while ((match = headerPattern.exec(gameText)) !== null) {
-        lastMatch = match;
-      }
-      
-      if (lastMatch) {
-        movesText = gameText.substring(lastMatch.index + lastMatch[0].length);
-      } else {
-        // Last resort: everything after last ]
-        const lastBracket = gameText.lastIndexOf(']');
-        if (lastBracket >= 0) {
-          movesText = gameText.substring(lastBracket + 1);
-        }
+      // Fallback: find last ] character
+      const lastBracket = gameText.lastIndexOf(']');
+      if (lastBracket >= 0) {
+        movesText = gameText.substring(lastBracket + 1);
       }
     }
     
     // Remove all annotations and clean up
+    // First remove multi-line comments in braces
+    movesText = movesText.replace(/\{[^}]*\}/gs, ''); // Comments in braces (including multi-line)
     movesText = movesText.replace(/\{\s*\[%[^\]]+\]\s*\}/g, ''); // [%clk], [%eval], etc.
-    movesText = movesText.replace(/\{[^}]*\}/g, ''); // Comments in braces (including multi-line)
     movesText = movesText.replace(/\$\d+/g, ''); // Move quality markers
     movesText = movesText.replace(/\[%[^\]]+\]/g, ''); // Any remaining annotations
     movesText = movesText.replace(/^\s*[\r\n]+/gm, ''); // Remove leading blank lines
     movesText = movesText.trim();
     
     // Debug: log what we extracted
+    console.log('Last header line index:', lastHeaderLineIndex);
     console.log('Extracted moves text length:', movesText.length);
-    console.log('Moves text preview:', movesText.substring(0, 200));
+    console.log('Moves text preview:', movesText.substring(0, 300));
 
     // Update header
     const headerEl = document.getElementById('game-header');
