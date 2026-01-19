@@ -28,14 +28,38 @@
   // Initialize the viewer
   function init() {
     console.log('Initializing chess viewer...');
+    console.log('Dependencies check:', {
+      Chess: typeof Chess,
+      Chessboard: typeof Chessboard,
+      jQuery: typeof jQuery
+    });
     
     const boardEl = document.getElementById('board');
     if (!boardEl) {
       console.error('Board element not found!');
+      showError('Board element not found in DOM');
       return;
     }
+    
+    console.log('Board element found:', boardEl);
 
     waitForDependencies(() => {
+      console.log('All dependencies loaded, initializing...');
+      
+      // Double-check everything is available
+      if (typeof Chess === 'undefined') {
+        showError('Chess library not loaded');
+        return;
+      }
+      if (typeof Chessboard === 'undefined') {
+        showError('Chessboard library not loaded');
+        return;
+      }
+      if (typeof jQuery === 'undefined') {
+        showError('jQuery not loaded');
+        return;
+      }
+      
       game = new Chess();
       
       const config = {
@@ -45,8 +69,50 @@
       };
 
       try {
+        console.log('Calling Chessboard with config:', config);
+        
+        // Ensure board element exists and has dimensions
+        var boardElement = jQuery('#board');
+        if (boardElement.length === 0) {
+          throw new Error('Board element not found with jQuery selector');
+        }
+        
+        // Check if element has dimensions (required for chessboard-js)
+        var width = boardElement.width();
+        var height = boardElement.height();
+        console.log('Board element dimensions:', width, 'x', height);
+        
+        if (width === 0 || height === 0) {
+          console.warn('Board element has no dimensions, setting default');
+          boardElement.css({
+            width: '480px',
+            height: '480px'
+          });
+        }
+        
+        // Initialize chessboard
         board = Chessboard('board', config);
-        console.log('Chessboard initialized');
+        
+        if (!board) {
+          throw new Error('Chessboard returned null/undefined');
+        }
+        
+        console.log('Chessboard initialized successfully');
+        
+        // Verify board is actually rendered after a short delay
+        setTimeout(() => {
+          var boardSquares = jQuery('#board .square-55d63');
+          console.log('Board squares found:', boardSquares.length);
+          if (boardSquares.length === 0) {
+            console.warn('No board squares found - attempting to re-render');
+            // Try to set position again to force render
+            if (board && board.position) {
+              board.position('start');
+            }
+          } else {
+            console.log('Board rendered successfully with', boardSquares.length, 'squares');
+          }
+        }, 200);
         
         // Load PGN file
         loadPGN();
@@ -55,7 +121,8 @@
         setupEventListeners();
       } catch (e) {
         console.error('Error initializing chessboard:', e);
-        showError('Failed to initialize chessboard: ' + e.message);
+        console.error('Stack:', e.stack);
+        showError('Failed to initialize chessboard: ' + e.message + '<br>Check browser console for details.');
       }
     });
   }
