@@ -107,34 +107,27 @@
   function parsePGN(text) {
     games = [];
     
-    // Split by double newlines - this is the standard PGN separator
-    const parts = text.split(/\n\s*\n/).filter(p => p.trim().length > 0);
+    // Split by [Event to find game boundaries
+    // Each game starts with [Event "..."]
+    const gameBlocks = text.split(/(?=\[Event)/);
     
-    console.log('Split into', parts.length, 'parts');
+    console.log('Split into', gameBlocks.length, 'potential game blocks');
     
-    parts.forEach((part, idx) => {
-      const trimmed = part.trim();
-      // A valid game should have [Event tag and moves
-      if (trimmed.includes('[Event') && (trimmed.includes('1.') || trimmed.match(/\d+\.\s+\w/))) {
+    gameBlocks.forEach((block, idx) => {
+      const trimmed = block.trim();
+      // Skip empty blocks
+      if (!trimmed || trimmed.length < 50) {
+        return;
+      }
+      
+      // A valid game should have [Event tag
+      if (trimmed.includes('[Event')) {
         games.push(trimmed);
-        console.log('Found game', games.length, ':', trimmed.substring(0, 100));
+        console.log('Found game', games.length, ':', trimmed.substring(0, 150));
       } else {
-        console.log('Skipping part', idx, ':', trimmed.substring(0, 100));
+        console.log('Skipping block', idx, ':', trimmed.substring(0, 100));
       }
     });
-    
-    // If still no games, try a more lenient approach
-    if (games.length === 0) {
-      console.log('Trying alternative parsing...');
-      // Look for [Event blocks followed by moves
-      const gameBlocks = text.split(/(?=\[Event)/);
-      gameBlocks.forEach(block => {
-        const trimmed = block.trim();
-        if (trimmed.length > 100 && trimmed.includes('[Event')) {
-          games.push(trimmed);
-        }
-      });
-    }
     
     console.log('Total games parsed:', games.length);
   }
