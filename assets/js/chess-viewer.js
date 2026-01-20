@@ -107,25 +107,23 @@
   function parsePGN(text) {
     games = [];
     
-    // Split by [Event to find game boundaries
-    // Each game starts with [Event "..."]
-    const gameBlocks = text.split(/(?=\[Event)/);
+    // Split by [Event *space* to find real game boundaries (avoid [EventDate], etc.)
+    // Each game starts with a line like: [Event "...."]
+    const gameBlocks = text.split(/(?=\[Event\s)/);
     
     console.log('Split into', gameBlocks.length, 'potential game blocks');
     
     gameBlocks.forEach((block, idx) => {
       const trimmed = block.trim();
-      // Skip empty blocks
-      if (!trimmed || trimmed.length < 50) {
-        return;
-      }
+      // Skip empty or very short blocks
+      if (!trimmed || trimmed.length < 50) return;
       
-      // A valid game should have [Event tag
-      if (trimmed.includes('[Event')) {
+      // Ensure this block actually has an [Event "...] header
+      if (trimmed.match(/\[Event\s+"[^"]*"\]/)) {
         games.push(trimmed);
         console.log('Found game', games.length, ':', trimmed.substring(0, 150));
       } else {
-        console.log('Skipping block', idx, ':', trimmed.substring(0, 100));
+        console.log('Skipping block', idx, ':', trimmed.substring(0, 120));
       }
     });
     
