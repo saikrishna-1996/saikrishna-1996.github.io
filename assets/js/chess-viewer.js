@@ -38,11 +38,12 @@
     
     game = new Chess();
     
-    const config = {
-      draggable: false,
-      position: 'start',
-      pieceTheme: 'https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/img/chesspieces/wikipedia/{piece}.png'
-    };
+      const config = {
+        draggable: false,
+        position: 'start',
+        // Use official chessboard.js piece set hosted on chessboardjs.com
+        pieceTheme: 'https://chessboardjs.com/img/chesspieces/wikipedia/{piece}.png'
+      };
 
     try {
       // Initialize chessboard
