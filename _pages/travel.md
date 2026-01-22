@@ -119,6 +119,72 @@ Welcome to my travel page! Here you'll find photos and stories from my adventure
     The historic charm and French-Canadian culture of Chambly, Quebec.
 </div>
 
+## Dawson City, Yukon
+
+<div class="img_row">
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/dawsoncity1.jpg" alt="" title="Dawson City, Yukon"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/dawsoncity2.jpg" alt="" title="Dawson City, Yukon"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/dawsoncity3.jpg" alt="" title="Dawson City, Yukon"/>
+</div>
+<div class="col three caption">
+    The historic gold rush town of Dawson City, preserving the spirit of the Klondike.
+</div>
+
+<div class="img_row">
+    <img class="col two left" src="{{ site.baseurl }}/assets/img/dawsoncity4.jpg" alt="" title="Dawson City, Yukon"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/dawsoncity5.jpg" alt="" title="Dawson City, Yukon"/>
+</div>
+<div class="col three caption">
+    Exploring the frontier history and natural beauty of the Yukon Territory.
+</div>
+
+## Whitehorse, Yukon
+
+<div class="img_row">
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/whitehorse1.jpg" alt="" title="Whitehorse, Yukon"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/whitehorse2.jpg" alt="" title="Whitehorse, Yukon"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/whitehorse3.jpg" alt="" title="Whitehorse, Yukon"/>
+</div>
+<div class="col three caption">
+    The capital city of Yukon, where wilderness meets urban life in Canada's north.
+</div>
+
+<div class="img_row">
+    <img class="col three left" src="{{ site.baseurl }}/assets/img/whitehorse4.jpg" alt="" title="Whitehorse, Yukon"/>
+</div>
+<div class="col three caption">
+    The stunning landscapes and northern lights of Whitehorse.
+</div>
+
+## Muriwai, New Zealand
+
+<div class="img_row">
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/muriwai1.jpg" alt="" title="Muriwai, New Zealand"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/muriwai2.jpg" alt="" title="Muriwai, New Zealand"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/muriwai3.jpg" alt="" title="Muriwai, New Zealand"/>
+</div>
+<div class="col three caption">
+    The dramatic black sand beaches and gannet colony of Muriwai, on New Zealand's west coast.
+</div>
+
+<div class="img_row">
+    <img class="col three left" src="{{ site.baseurl }}/assets/img/muriwai4.jpg" alt="" title="Muriwai, New Zealand"/>
+</div>
+<div class="col three caption">
+    The wild beauty of Muriwai's coastal scenery.
+</div>
+
+## Bijeljina, Bosnia and Herzegovina
+
+<div class="img_row">
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/bijeljina1.jpg" alt="" title="Bijeljina, Bosnia and Herzegovina"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/bijeljina2.jpg" alt="" title="Bijeljina, Bosnia and Herzegovina"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/bijeljina3.jpg" alt="" title="Bijeljina, Bosnia and Herzegovina"/>
+</div>
+<div class="col three caption">
+    Exploring the cultural heritage and historic sites of Bijeljina in northeastern Bosnia and Herzegovina.
+</div>
+
 ---
 
 *This page showcases my travels across different continents and cultures. Each destination has brought unique experiences and memories that continue to inspire my journey.*
