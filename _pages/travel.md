@@ -5,7 +5,9 @@ permalink: /travel/
 description: Adventures and memories from around the world
 ---
 
-Welcome to my travel page! Here you'll find photos and stories from my adventures around the world. From academic conferences to chess tournaments to personal trips, these are the places and experiences that have shaped my journey. For now, I added only a few pictures from 2024 and 2025. more coming soon
+Welcome to my travel page! Here you'll find photos and stories from my adventures around the world. From academic conferences to chess tournaments to personal trips, these are the places and experiences that have shaped my journey. 
+Note: The captions are auto-generated, do not judge me
+Note: For now, I added only a few pictures from 2023-2025. more coming soon. In the meantime, you could check my instagram saikrishnagv_96
 
 ## Stockholm, Sweden
 
