@@ -304,17 +304,30 @@
     if (currentMoveEl) {
       const container = document.getElementById('move-list-container');
       if (container) {
-        // Calculate position relative to container
-        const containerTop = container.getBoundingClientRect().top + container.scrollTop;
-        const elementTop = currentMoveEl.getBoundingClientRect().top + container.scrollTop;
-        const elementHeight = currentMoveEl.offsetHeight;
-        const containerHeight = container.clientHeight;
-        
-        // Scroll within container only, not the whole page
-        const scrollPosition = elementTop - containerTop - (containerHeight / 2) + (elementHeight / 2);
-        container.scrollTo({
-          top: scrollPosition,
-          behavior: 'smooth'
+        // Prevent page scroll by using requestAnimationFrame and focusing on container
+        requestAnimationFrame(() => {
+          const containerRect = container.getBoundingClientRect();
+          const elementRect = currentMoveEl.getBoundingClientRect();
+          
+          // Calculate position relative to container's scroll position
+          const elementOffsetTop = currentMoveEl.offsetTop;
+          const containerScrollTop = container.scrollTop;
+          const containerHeight = container.clientHeight;
+          const elementHeight = currentMoveEl.offsetHeight;
+          
+          // Calculate desired scroll position to center the element
+          const targetScrollTop = elementOffsetTop - (containerHeight / 2) + (elementHeight / 2);
+          
+          // Only scroll if element is not already visible
+          const elementTop = elementOffsetTop - containerScrollTop;
+          const elementBottom = elementTop + elementHeight;
+          
+          if (elementTop < 0 || elementBottom > containerHeight) {
+            container.scrollTo({
+              top: Math.max(0, targetScrollTop),
+              behavior: 'smooth'
+            });
+          }
         });
       }
     }
