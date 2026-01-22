@@ -122,8 +122,3 @@ Welcome to my travel page! Here you'll find photos and stories from my adventure
 ---
 
 *This page showcases my travels across different continents and cultures. Each destination has brought unique experiences and memories that continue to inspire my journey.*
-
-The gallery system supports flexible layouts:
-- `col one` = 1/3 width
-- `col two` = 2/3 width  
-- `col three` = full width
