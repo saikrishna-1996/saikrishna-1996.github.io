@@ -153,6 +153,8 @@
     const resultMatch = gameText.match(/\[Result\s+"([^"]+)"/);
     const dateMatch = gameText.match(/\[Date\s+"([^"]+)"/);
     const siteMatch = gameText.match(/\[Site\s+"([^"]+)"/);
+    const whiteEloMatch = gameText.match(/\[WhiteElo\s+"([^"]+)"/);
+    const blackEloMatch = gameText.match(/\[BlackElo\s+"([^"]+)"/);
 
     // Extract moves - find everything after the last header tag
     // Headers are like [Event "..."], [Site "..."], etc. on separate lines
@@ -205,10 +207,24 @@
     // Update header
     const headerEl = document.getElementById('game-header');
     if (headerEl) {
+      const whiteName = whiteMatch ? whiteMatch[1] : 'Unknown';
+      const blackName = blackMatch ? blackMatch[1] : 'Unknown';
+      const whiteElo = whiteEloMatch ? whiteEloMatch[1] : null;
+      const blackElo = blackEloMatch ? blackEloMatch[1] : null;
+      
+      // Build player names with ratings if available
+      let whiteDisplay = whiteName;
+      if (whiteElo) {
+        whiteDisplay += ` (${whiteElo})`;
+      }
+      let blackDisplay = blackName;
+      if (blackElo) {
+        blackDisplay += ` (${blackElo})`;
+      }
+      
       headerEl.innerHTML = `
-        <h3>${headerMatch ? headerMatch[1] : 'Game ' + (index + 1)}</h3>
-        <p><strong>White:</strong> ${whiteMatch ? whiteMatch[1] : 'Unknown'} | 
-           <strong>Black:</strong> ${blackMatch ? blackMatch[1] : 'Unknown'}</p>
+        <h3>${whiteDisplay} vs ${blackDisplay}</h3>
+        <p><strong>Event:</strong> ${headerMatch ? headerMatch[1] : 'Unknown'}</p>
         <p><strong>Date:</strong> ${dateMatch ? dateMatch[1] : 'Unknown'} | 
            <strong>Result:</strong> ${resultMatch ? resultMatch[1] : '*'}</p>
         ${siteMatch ? `<p><strong>Site:</strong> ${siteMatch[1]}</p>` : ''}
