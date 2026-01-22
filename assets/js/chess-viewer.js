@@ -384,10 +384,27 @@
     games.forEach((gameText, index) => {
       const option = document.createElement('option');
       option.value = index;
-      const headerMatch = gameText.match(/\[Event\s+"([^"]+)"/);
       const whiteMatch = gameText.match(/\[White\s+"([^"]+)"/);
       const blackMatch = gameText.match(/\[Black\s+"([^"]+)"/);
-      const name = headerMatch ? headerMatch[1] : `Game ${index + 1}`;
+      const whiteEloMatch = gameText.match(/\[WhiteElo\s+"([^"]+)"/);
+      const blackEloMatch = gameText.match(/\[BlackElo\s+"([^"]+)"/);
+      
+      const whiteName = whiteMatch ? whiteMatch[1] : 'Unknown';
+      const blackName = blackMatch ? blackMatch[1] : 'Unknown';
+      const whiteElo = whiteEloMatch ? whiteEloMatch[1] : null;
+      const blackElo = blackEloMatch ? blackEloMatch[1] : null;
+      
+      // Build player names with ratings if available
+      let whiteDisplay = whiteName;
+      if (whiteElo) {
+        whiteDisplay += ` (${whiteElo})`;
+      }
+      let blackDisplay = blackName;
+      if (blackElo) {
+        blackDisplay += ` (${blackElo})`;
+      }
+      
+      const name = `${whiteDisplay} vs ${blackDisplay}`;
       option.textContent = `${index + 1}. ${name}`;
       selectEl.appendChild(option);
     });
