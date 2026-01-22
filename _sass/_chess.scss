@@ -1,6 +1,6 @@
 // Chess Viewer Styles
 #chess-container {
-  max-width: $measure-width;
+  max-width: 1400px; // Allow wider layout for side-by-side
   margin: 0 auto;
   padding: $space-2;
 
