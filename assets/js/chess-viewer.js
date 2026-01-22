@@ -223,7 +223,7 @@
       }
       
       headerEl.innerHTML = `
-        <h3>${whiteDisplay} vs ${blackDisplay}</h3>
+        <p><strong>${whiteDisplay} vs ${blackDisplay}</strong></p>
         <p><strong>Event:</strong> ${headerMatch ? headerMatch[1] : 'Unknown'}</p>
         <p><strong>Date:</strong> ${dateMatch ? dateMatch[1] : 'Unknown'} | 
            <strong>Result:</strong> ${resultMatch ? resultMatch[1] : '*'}</p>

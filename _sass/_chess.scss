@@ -42,14 +42,6 @@
       border-radius: $border-radius;
       margin-bottom: $space-2;
 
-      h3 {
-        margin-top: 0;
-        margin-bottom: $space-1;
-        color: $theme-color;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-      }
-
       p {
         margin: $space-1 0;
         font-size: $small-font-size;
@@ -70,6 +62,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: $space-1;
+        font-size: 0.9em; // Slightly smaller text for notation
 
         .move-pair {
           display: flex;
