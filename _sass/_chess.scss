@@ -21,8 +21,20 @@
     }
   }
 
-  #chess-info {
+  #chess-main-layout {
+    display: flex;
+    gap: $space-3;
+    align-items: flex-start;
     margin-bottom: $space-2;
+    
+    @media (max-width: $on-palm) {
+      flex-direction: column;
+    }
+  }
+
+  #chess-info {
+    flex: 1;
+    min-width: 0; // Allow flex item to shrink below content size
 
     #game-header {
       background-color: $lighter-gray;
@@ -43,7 +55,7 @@
     }
 
     #move-list-container {
-      max-height: 300px;
+      max-height: 500px;
       overflow-y: auto;
       border: $border-width solid $border-color;
       border-radius: $border-radius;
@@ -102,8 +114,8 @@
   }
 
   #chessboard-container {
+    flex-shrink: 0; // Don't shrink the board
     text-align: center;
-    margin-bottom: $space-2;
 
     #board {
       margin: 0 auto $space-2;
@@ -169,16 +181,18 @@
 // Responsive adjustments
 @media (max-width: $on-palm) {
   #chess-container {
-    #chess-info {
-      #move-list-container {
-        max-height: 200px;
+    #chess-main-layout {
+      #chess-info {
+        #move-list-container {
+          max-height: 300px;
+        }
       }
-    }
 
-    #chessboard-container {
-      #board {
-        width: 100% !important;
-        max-width: 400px;
+      #chessboard-container {
+        #board {
+          width: 100% !important;
+          max-width: 400px;
+        }
       }
     }
   }
