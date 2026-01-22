@@ -5,7 +5,7 @@ permalink: /travel/
 description: Adventures and memories from around the world
 ---
 
-Welcome to my travel page! Here you'll find photos and stories from my adventures around the world. From academic conferences to personal trips, these are the places and experiences that have shaped my journey.
+Welcome to my travel page! Here you'll find photos and stories from my adventures around the world. From academic conferences to chess tournaments to personal trips, these are the places and experiences that have shaped my journey. For now, I added only a few pictures from 2024 and 2025. more coming soon
 
 ## Stockholm, Sweden
 
