@@ -283,10 +283,24 @@
       }
     });
     
-    // Scroll to current move
+    // Scroll to current move within the move list container only
     const currentMoveEl = moveListEl.querySelector('.current-move');
     if (currentMoveEl) {
-      currentMoveEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const container = document.getElementById('move-list-container');
+      if (container) {
+        // Calculate position relative to container
+        const containerTop = container.getBoundingClientRect().top + container.scrollTop;
+        const elementTop = currentMoveEl.getBoundingClientRect().top + container.scrollTop;
+        const elementHeight = currentMoveEl.offsetHeight;
+        const containerHeight = container.clientHeight;
+        
+        // Scroll within container only, not the whole page
+        const scrollPosition = elementTop - containerTop - (containerHeight / 2) + (elementHeight / 2);
+        container.scrollTo({
+          top: scrollPosition,
+          behavior: 'smooth'
+        });
+      }
     }
   }
 
