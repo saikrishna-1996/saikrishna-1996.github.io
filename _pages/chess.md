@@ -2,7 +2,7 @@
 layout: page
 permalink: /chess/
 title: My Best Games
-description: A collection of some of my wins against active Grandmasters in FIDE classical tournaments
+description: A collection of some of my wins against active GMs in FIDE classical tournaments
 ---
 
 <div id="chess-container">
