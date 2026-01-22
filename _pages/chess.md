@@ -39,7 +39,7 @@ description: A collection of my best games against Grandmasters and Internationa
 
 <script>
   // Set base URL for PGN file - use relative_url for proper path resolution
-  window.CHESS_PGN_PATH = '{{ "/assets/pgn/WinsAgainstGMs.pgn" | relative_url }}';
+  window.CHESS_PGN_PATH = '{{ "/assets/pgn/MyWinsAgainstGMs.pgn" | relative_url }}';
 </script>
 
 <!-- Load all required libraries in order -->

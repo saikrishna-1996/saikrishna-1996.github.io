@@ -69,7 +69,7 @@
     // If not set or empty, construct path relative to site root
     if (!pgnPath || pgnPath.trim() === '' || pgnPath === 'undefined') {
       // Try absolute path from root (works for GitHub Pages)
-      pgnPath = '/assets/pgn/WinsAgainstGMs.pgn';
+      pgnPath = '/assets/pgn/MyWinsAgainstGMs.pgn';
     }
     
     console.log('Loading PGN from:', pgnPath);

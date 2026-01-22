@@ -1,0 +1,689 @@
+﻿[Event "6th KIIT open"]
+[Site "?"]
+[Date "2014.05.31"]
+[Round "10.9"]
+[White "Aravindh, Chithambaram Vr."]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "C74"]
+[WhiteElo "2439"]
+[BlackElo "2358"]
+[PlyCount "62"]
+[EventType "swiss"]
+[SourceVersionDate "2015.05.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. c3 f5 6. d3 Nf6 7. O-O Be7 8. Bb3
+Na5 9. Bc2 O-O 10. Nbd2 f4 11. d4 Nd7 12. Qe2 g5 13. h3 Qe8 14. b4 Nc6 15. Bb2
+h5 16. Qc4+ Kh7 17. d5 Nd8 18. Nh2 Nf6 19. Qxc7 g4 20. hxg4 hxg4 21. Rfe1 Nf7
+22. Qc4 Ng5 23. Kf1 Qh5 24. Ke2 f3+ 25. gxf3 gxf3+ 26. Nhxf3 Nxf3 27. Nxf3 Bg4
+28. Qd3 Ng8 29. Rh1 Bh4 30. Kd2 Rxf3 31. Qe2 Bg5+ 0-1
+
+[Event "New Delhi Parsvnath op 7th"]
+[Site "New Delhi"]
+[Date "2009.01.11"]
+[Round "2"]
+[White "Bhat, Vinay S"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "E99"]
+[WhiteElo "2495"]
+[BlackElo "2162"]
+[PlyCount "92"]
+[EventDate "2009.01.11"]
+[EventType "swiss"]
+[EventRounds "10"]
+[EventCountry "IND"]
+[SourceTitle "CBM 128 Extra"]
+[Source "ChessBase"]
+[SourceDate "2009.03.05"]
+[SourceVersion "2"]
+[SourceVersionDate "2009.03.25"]
+[SourceQuality "1"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5
+Ne7 9. Ne1 Ne8 10. Nd3 f5 11. Bd2 Nf6 12. f3 f4 13. c5 g5 14. Rc1 Ng6 15. Nb5
+Rf7 16. Ba5 b6 17. cxd6 cxd6 18. Bb4 Bf8 19. Nf2 a6 20. Na3 h5 21. Nc4 a5 22.
+Be1 Bd7 23. a4 Rg7 24. h3 Nh8 25. Na3 Nf7 26. Nb5 Rc8 27. Rxc8 Qxc8 28. Nd3 g4
+29. Bh4 Ng5 30. hxg4 hxg4 31. Kf2 gxf3 32. gxf3 Nh3+ 33. Ke1 Nh5 34. Bf2 Qd8
+35. Kd2 Rg2 36. Kc3 Ng3 37. Bxg3 fxg3 38. f4 exf4 39. Kb3 Qg5 40. Nd4 Bg7 41.
+Nf3 Qg6 42. Nd2 Rxe2 43. Qxe2 g2 44. Nc4 gxf1=Q 45. Qxf1 Qxe4 46. Nxb6 Bf5 0-1
+
+[Event "Bhubaneswar op 2nd"]
+[Site "Bhubaneswar"]
+[Date "2010.05.28"]
+[Round "9"]
+[White "Fier, Alexandr"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "E97"]
+[WhiteElo "2581"]
+[BlackElo "2282"]
+[PlyCount "66"]
+[EventDate "2010.05.22"]
+[EventType "swiss"]
+[EventRounds "11"]
+[EventCountry "IND"]
+[SourceTitle "CBM 136 Extra"]
+[Source "ChessBase"]
+[SourceDate "2010.07.02"]
+[SourceVersion "2"]
+[SourceVersionDate "2010.07.15"]
+[SourceQuality "1"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5
+Ne7 9. b4 Nh5 10. Re1 f5 11. Ng5 Nf6 12. Bf3 c6 13. Bb2 h6 14. Ne6 Bxe6 15.
+dxe6 fxe4 16. Nxe4 Nxe4 17. Rxe4 d5 18. cxd5 cxd5 19. Rxe5 Bxe5 20. Bxe5 Qb6
+21. Bb2 Rad8 22. Qd2 Qxe6 23. Re1 Qf7 24. Qxh6 d4 25. Qd2 Nf5 26. Bd1 Qxa2 27.
+h4 Rde8 28. Rxe8 Rxe8 29. g4 Qe6 30. Kh2 Qd6+ 31. Kg2 Qd5+ 32. Kh2 Nxh4 33. Kg3
+Qg2+ 0-1
+
+[Event "Chennai op 3rd"]
+[Site "Chennai"]
+[Date "2011.01.18"]
+[Round "1"]
+[White "Sai, Krishna GV"]
+[Black "Dzhumaev, Marat"]
+[Result "1-0"]
+[ECO "B04"]
+[WhiteElo "2319"]
+[BlackElo "2493"]
+[PlyCount "121"]
+[EventDate "2011.01.18"]
+[EventType "swiss"]
+[EventRounds "11"]
+[EventCountry "IND"]
+[SourceTitle "CBM 140 Extra"]
+[Source "ChessBase"]
+[SourceDate "2011.03.01"]
+[SourceVersion "1"]
+[SourceVersionDate "2011.03.01"]
+[SourceQuality "1"]
+
+1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nf3 g6 7. h3 Bg7 8. Be2
+O-O 9. O-O Nc6 10. Nc3 Bf5 11. Be3 d5 12. c5 Nc4 13. Bc1 b6 14. b3 bxc5 15. g4
+cxd4 16. gxf5 Nb6 17. Nb5 d3 18. Bxd3 Bxa1 19. Ng5 Bf6 20. Nxh7 Kxh7 21. fxg6+
+Kg7 22. gxf7 Rxf7 23. Bf5 Be5 24. Qg4+ Kf8 25. Be6 Bg7 26. Kh1 Rf6 27. Rg1 Rxe6
+28. Qxe6 Qc8 29. Qe3 d4 30. Qg3 Ke8 31. Nc7+ Kd8 32. Nxa8 Nxa8 33. Qh4 Ne5 34.
+Qxd4+ Ke8 35. Qe3 Qc6+ 36. f3 Bf6 37. Qe4 Qxe4 38. fxe4 Nc7 39. Be3 a6 40. Rg8+
+Kd7 41. Kg2 Nd3 42. Kg3 Nb4 43. h4 Nxa2 44. h5 Nc3 45. Kf3 N3b5 46. Bf4 Ne6 47.
+e5 Nbd4+ 48. Ke4 Nxf4 49. Kxf4 Ne6+ 50. Ke4 Bg5 51. Rg6 Bd2 52. h6 Nc5+ 53. Kd5
+Nd3 54. Ke4 Nc5+ 55. Kf5 e6+ 56. Kf6 Ne4+ 57. Kf7 Bc3 58. h7 Bxe5 59. Rg7 Nd6+
+60. Kg8+ Bxg7 61. Kxg7 1-0
+
+[Event "Chennai op 3rd"]
+[Site "Chennai"]
+[Date "2011.01.24"]
+[Round "9"]
+[White "Sai, Krishna GV"]
+[Black "Babujian, Levon"]
+[Result "1-0"]
+[ECO "C88"]
+[WhiteElo "2319"]
+[BlackElo "2456"]
+[PlyCount "141"]
+[EventDate "2011.01.18"]
+[EventType "swiss"]
+[EventRounds "11"]
+[EventCountry "IND"]
+[SourceTitle "CBM 140 Extra"]
+[Source "ChessBase"]
+[SourceDate "2011.03.01"]
+[SourceVersion "1"]
+[SourceVersionDate "2011.03.01"]
+[SourceQuality "1"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. h3
+Bb7 9. d3 d6 10. a3 Qd7 11. Nc3 Rae8 12. Ba2 Nd8 13. Ne2 Ne6 14. Ng3 Bd8 15. c3
+c5 16. Kh2 Bc7 17. Nh4 d5 18. Qf3 c4 19. Nhf5 Nf4 20. dxc4 dxe4 21. Qd1 Qc6 22.
+cxb5 axb5 23. Ne3 Kh8 24. c4 Rd8 25. Qc2 Nd3 26. Rd1 Bb6 27. b4 Bd4 28. Rb1 Rc8
+29. c5 Ra8 30. Ngf5 Rad8 31. Bb3 Nh5 32. g3 Bc8 33. Ne7 Qd7 34. Nxc8 Qxc8 35.
+Qe2 g6 36. Bc2 f5 37. Bxd3 exd3 38. Rxd3 f4 39. Ng4 Qf5 40. Bb2 Rde8 41. Rxd4
+exd4 42. Bxd4+ Ng7 43. Qb2 Re7 44. Re1 Qd7 45. c6 fxg3+ 46. fxg3 Qxd4 47. Qxd4
+Rxe1 48. Qc3 Rff1 49. Qd2 Rh1+ 50. Kg2 Rhg1+ 51. Kh2 Rh1+ 52. Kg2 Rhg1+ 53. Kf3
+h5 54. Nf2 Rc1 55. Qd8+ Kh7 56. c7 Rc3+ 57. Nd3 Rgc1 58. Ke4 Rc4+ 59. Ke5 R1c2
+60. Nc5 Re2+ 61. Kd5 Nf5 62. c8=Q Ne7+ 63. Qxe7+ Rxe7 64. Kc6 Rc3 65. Kxb5 Rxa3
+66. Qd8 Rf7 67. Ne4 Rf5+ 68. Kc4 Ra7 69. Ng5+ Kh6 70. h4 Rc7+ 71. Qxc7 1-0
+
+[Event "Mumbai Mayors Cup 10th"]
+[Site "Mumbai"]
+[Date "2017.06.09"]
+[Round "8"]
+[White "Sai, Krishna GV"]
+[Black "Mollah Abdullah, Al Rakib"]
+[Result "1-0"]
+[ECO "C72"]
+[WhiteElo "2339"]
+[BlackElo "2503"]
+[PlyCount "103"]
+[EventDate "2017.06.04"]
+[EventType "swiss"]
+[EventRounds "10"]
+[EventCountry "IND"]
+[SourceTitle "CBM 178 Extra"]
+[Source "ChessBase"]
+[SourceDate "2017.06.22"]
+[SourceVersion "1"]
+[SourceVersionDate "2017.06.22"]
+[SourceQuality "1"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Bd7 6. d4 exd4 7. Nxd4 Be7 8. c4
+Bf6 9. Bxc6 bxc6 10. f4 Ne7 11. Nf3 Ng6 12. e5 Be7 13. Qd3 O-O 14. Nc3 dxe5 15.
+f5 Nf4 16. Qe4 f6 17. Kh1 Re8 18. g3 Nh5 19. c5 Bf8 20. g4 Nf4 21. Bxf4 exf4
+22. Qc4+ Kh8 23. Rad1 Re7 24. Rd4 Qb8 25. b3 Be8 26. Rxf4 Bf7 27. Qd3 Qe8 28.
+Rd1 Re3 29. Qd4 Re5 30. b4 a5 31. a3 axb4 32. axb4 Bb3 33. Rd2 Bd5 34. Qf2 Rd8
+35. Rfd4 g6 36. Nxd5 Rexd5 37. Rxd5 cxd5 38. Re2 Qa4 39. fxg6 hxg6 40. Nh4 Kg7
+41. g5 Qa1+ 42. Re1 Qc3 43. gxf6+ Qxf6 44. Qg3 Kh6 45. Rg1 g5 46. Nf3 Qf5 47.
+Nxg5 Kh5 48. Qe3 d4 49. Qe2+ Kh6 50. Ne6 Rd5 51. Nxf8 Re5 52. Qg2 1-0
+
+[Event "Mumbai Mayors Cup 10th"]
+[Site "Mumbai"]
+[Date "2017.06.11"]
+[Round "10"]
+[White "Sai, Krishna GV"]
+[Black "Deepan Chakkravarthy, J."]
+[Result "1-0"]
+[ECO "B42"]
+[WhiteElo "2339"]
+[BlackElo "2480"]
+[PlyCount "95"]
+[EventDate "2017.06.04"]
+[EventType "swiss"]
+[EventRounds "10"]
+[EventCountry "IND"]
+[SourceTitle "CBM 178 Extra"]
+[Source "ChessBase"]
+[SourceDate "2017.06.22"]
+[SourceVersion "1"]
+[SourceVersionDate "2017.06.22"]
+[SourceQuality "1"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 Bc5 6. Nb3 Be7 7. O-O d6 8. f4
+Nd7 9. Qe1 Ngf6 10. Nc3 Qc7 11. a4 b6 12. Qg3 g6 13. e5 dxe5 14. fxe5 Nh5 15.
+Qf3 O-O 16. Bh6 Nxe5 17. Qe2 Nxd3 18. cxd3 Bd6 19. g4 Ng7 20. Rac1 Qd8 21. g5
+Bb7 22. Ne4 Be7 23. Nf6+ Bxf6 24. gxf6 Nf5 25. Bxf8 Qxf8 26. Rc7 Bd5 27. Nd2
+Qd6 28. Rfc1 h5 29. Ne4 Bxe4 30. Qxe4 Rf8 31. R1c3 a5 32. Rc8 Rxc8 33. Rxc8+
+Kh7 34. d4 Nxd4 35. Qb7 Qf4 36. Qxf7+ Kh6 37. Rc3 Ne2+ 38. Kg2 Qe4+ 39. Kf2 Nf4
+40. h4 Qg2+ 41. Ke3 Nd5+ 42. Kd4 Qg4+ 43. Ke5 Qf5+ 44. Kd6 Qf4+ 45. Kxe6 Qf5+
+46. Kd6 Qxf6+ 47. Qxf6 Nxf6 48. Rb3 1-0
+
+[Event "Quebec op"]
+[Site "Quebec"]
+[Date "2018.07.22"]
+[Round "3"]
+[White "Sai, Krishna GV"]
+[Black "Sambuev, Bator"]
+[Result "1-0"]
+[ECO "B35"]
+[WhiteElo "2388"]
+[BlackElo "2514"]
+[PlyCount "71"]
+[EventDate "2018.07.21"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "CAN"]
+[SourceTitle "CBM 186 Extra"]
+[Source "ChessBase"]
+[SourceDate "2018.08.24"]
+[SourceVersion "1"]
+[SourceVersionDate "2018.08.24"]
+[SourceQuality "1"]
+
+1. e4 c5 2. Nf3 Nc6 3. Nc3 g6 4. d4 cxd4 5. Nxd4 Bg7 6. Be3 Nf6 7. Bc4 O-O 8.
+Bb3 Re8 9. O-O d6 10. h3 Na5 11. Qd2 b6 12. Bh6 Bb7 13. Bxf7+ Kxf7 14. Bxg7 Nc4
+15. Qh6 Nh5 16. f4 Rg8 17. f5 Rxg7 18. fxg6+ Kg8 19. Ne6 Rxg6 20. Qxh5 Qc8 21.
+Rf8+ Qxf8 22. Nxf8 Rxf8 23. Nd5 Rg7 24. Rf1 Rxf1+ 25. Kxf1 Rf7+ 26. Kg1 Ne5 27.
+Qg5+ Kf8 28. Nc7 Rf6 29. Qh5 Ng6 30. Qg4 Ne5 31. Qe2 Ng6 32. Qc4 Ne5 33. Ne6+
+Ke8 34. Qc7 Bc6 35. Qc8+ Kf7 36. Nd8+ 1-0
+
+[Event "Waterloo Maplewood"]
+[Site "Waterloo"]
+[Date "2022.11.16"]
+[Round "4"]
+[White "Sai, Krishna GV"]
+[Black "Ortiz Suarez, Isan Reynaldo"]
+[Result "1-0"]
+[ECO "B99"]
+[WhiteElo "2396"]
+[BlackElo "2520"]
+[PlyCount "69"]
+[EventDate "2022.11.14"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "CAN"]
+[EventCategory "9"]
+[SourceTitle "CBM 211 Extra"]
+[Source "ChessBase"]
+[SourceDate "2023.01.31"]
+[SourceVersion "1"]
+[SourceVersionDate "2023.01.31"]
+[SourceQuality "1"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 h6 8. Bh4
+Be7 9. Qf3 Qc7 10. O-O-O Nbd7 11. Be2 Rg8 12. Bg3 g5 13. e5 g4 14. Qf2 dxe5 15.
+fxe5 Nh5 16. Nd5 Bg5+ 17. Kb1 Qc5 18. Rhf1 Rf8 19. Nxe6 fxe6 20. Qxc5 Nxc5 21.
+Nc7+ Ke7 22. Rxf8 Kxf8 23. Nxa8 Nxg3 24. hxg3 Nd7 25. Bxg4 Ke7 26. Rd4 b5 27.
+Bf3 Be3 28. Re4 Ba7 29. a4 bxa4 30. Rxa4 Nxe5 31. Be2 Nd7 32. Nc7 Nc5 33. Ra3
+e5 34. b4 Ne4 35. Bxa6 1-0
+
+[Event "US Masters"]
+[Site "Charlotte"]
+[Date "2023.11.26"]
+[Round "9"]
+[White "Kaufman, Larry C"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "C90"]
+[WhiteElo "2188"]
+[BlackElo "2376"]
+[PlyCount "68"]
+[EventDate "2023.11.26"]
+[EventType "game"]
+[EventRounds "9"]
+[EventCountry "USA"]
+[SourceVersionDate "2015.05.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Nf6 6. Re1 b5 7. Bb3 Be7 8. a4
+Bb7 9. c3 O-O 10. d4 Nd7 11. a5 Bf6 12. Be3 g6 13. Nbd2 Ne7 14. Bh6 Bg7 15.
+Bxg7 Kxg7 16. Bc2 c5 17. b4 exd4 18. cxd4 Nc6 19. bxc5 dxc5 20. d5 Nb4 21. Nb3
+Rc8 22. Bb1 Re8 23. Qd2 Qf6 24. Ra3 Qd6 25. Nc1 f5 26. Qb2+ Kg8 27. Rae3 fxe4
+28. Bxe4 Nf6 29. Ng5 Nbxd5 30. Rf3 Nxe4 31. Rxe4 Nf4 32. Rxe8+ Rxe8 33. h4 Re1+
+34. Kh2 Nd3+ 0-1
+
+[Event "Budapest Vezerkepzo GM Christmas"]
+[Site "Budapest"]
+[Date "2023.12.27"]
+[Round "2"]
+[White "Sai, Krishna GV"]
+[Black "Berczes, David"]
+[Result "1-0"]
+[ECO "C13"]
+[WhiteElo "2371"]
+[BlackElo "2438"]
+[PlyCount "69"]
+[EventDate "2023.12.26"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "HUN"]
+[EventCategory "6"]
+[SourceTitle "Mega2024 Update 10"]
+[Source "Chessbase"]
+[SourceDate "2024.01.12"]
+[SourceVersion "1"]
+[SourceVersionDate "2024.01.12"]
+[SourceQuality "1"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Be7 6. Bxf6 gxf6 7. Nf3 a6 8.
+c4 f5 9. Nc3 Bf6 10. Qd2 c5 11. d5 O-O 12. O-O-O exd5 13. Nxd5 Bg7 14. Bd3 Nc6
+15. Qc2 b5 16. Bxf5 Nd4 17. Nxd4 cxd4 18. Rhe1 Kh8 19. Ne7 bxc4 20. Bxc8 Rxc8
+21. Nxc8 Qxc8 22. b3 Qb8 23. bxc4 Bh6+ 24. Rd2 Qb4 25. Re4 Qc3 26. f4 Qa1+ 27.
+Qb1 Qc3+ 28. Kd1 f5 29. Rexd4 Qe3 30. Qd3 Qg1+ 31. Kc2 Qa1 32. Rd8 Qxa2+ 33.
+Kd1 Qa4+ 34. Ke2 Re8+ 35. Kf2 1-0
+
+[Event "Budapest Vezerkepzo GM Christmas"]
+[Site "Budapest"]
+[Date "2023.12.28"]
+[Round "3"]
+[White "Varga, Zoltan"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "E83"]
+[WhiteElo "2378"]
+[BlackElo "2371"]
+[PlyCount "69"]
+[EventDate "2023.12.26"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "HUN"]
+[EventCategory "6"]
+[SourceTitle "Mega2024 Update 10"]
+[Source "Chessbase"]
+[SourceDate "2024.01.12"]
+[SourceVersion "1"]
+[SourceVersionDate "2024.01.12"]
+[SourceQuality "1"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 Nc6 7. Nge2 a6 8. Rc1
+Bd7 9. a3 Na5 10. Ng3 b5 11. cxb5 axb5 12. Nxb5 Qb8 13. Nxc7 Ra7 14. b4 Rxc7
+15. Rxc7 Qxc7 16. bxa5 Qxa5+ 17. Kf2 d5 18. e5 Ne8 19. Qd2 Qxa3 20. Be2 f6 21.
+Rc1 e6 22. Bh6 Bxh6 23. Qxh6 Qb2 24. Qe3 fxe5 25. Rd1 Nf6 26. Kg1 exd4 27. Rxd4
+Qb6 28. f4 Ne8 29. h4 Ng7 30. Kh2 Qd8 31. h5 gxh5 32. Bd3 Qf6 33. Rb4 Be8 34.
+f5 exf5 35. Rb6 0-1
+
+[Event "Austin Spring GM"]
+[Site "Austin"]
+[Date "2024.05.25"]
+[Round "2"]
+[White "Sai, Krishna GV"]
+[Black "Belous, Vladimir"]
+[Result "1-0"]
+[ECO "C41"]
+[WhiteElo "2404"]
+[BlackElo "2505"]
+[PlyCount "53"]
+[EventDate "2024.05.24"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "USA"]
+[EventCategory "6"]
+[SourceTitle "Mega2024 Update 31"]
+[Source "Chessbase"]
+[SourceDate "2024.06.10"]
+[SourceVersion "1"]
+[SourceVersionDate "2024.06.10"]
+[SourceQuality "1"]
+
+1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4 Nf6 5. Nc3 Be7 6. g3 O-O 7. Bg2 Bg4 8. f3
+c5 9. Nde2 Be6 10. g4 Nc6 11. Ng3 h6 12. Nd5 Ne5 13. Nxe7+ Qxe7 14. g5 hxg5 15.
+Bxg5 Rad8 16. f4 Nc4 17. f5 Bc8 18. Nh5 Ne5 19. Nxf6+ gxf6 20. Bh6 d5 21. Qh5
+dxe4 22. Rg1 Bxf5 23. Qxf5 Rfe8 24. Bf1+ Ng6 25. Bc4 Kh7 26. Qh5 Qe5 27. Bg5+
+1-0
+
+[Event "Budapest Kluger Memorial"]
+[Site "Budapest"]
+[Date "2024.08.30"]
+[Round "3"]
+[White "Sai, Krishna GV"]
+[Black "Cardoso Cardoso, Jose Gabriel"]
+[Result "1-0"]
+[ECO "B67"]
+[WhiteElo "2402"]
+[BlackElo "2507"]
+[PlyCount "89"]
+[EventDate "2024.08.28"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "HUN"]
+[EventCategory "6"]
+[SourceTitle "Mega2024 Update 45"]
+[Source "Chessbase"]
+[SourceDate "2024.09.15"]
+[SourceVersion "1"]
+[SourceVersionDate "2024.09.15"]
+[SourceQuality "1"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 a6 8.
+O-O-O Bd7 9. f3 Nxd4 10. Qxd4 Be7 11. f4 Bc6 12. Bc4 Qa5 13. Rhe1 O-O 14. f5 b5
+15. Bb3 b4 16. Nb1 e5 17. Qd3 Qc7 18. Nd2 a5 19. Kb1 a4 20. Bxf6 Bxf6 21. Bd5
+Bxd5 22. exd5 e4 23. Nxe4 Be5 24. f6 Rfc8 25. Rc1 gxf6 26. Rf1 Qd8 27. Qf3 Ra5
+28. Rcd1 b3 29. c3 a3 30. axb3 axb2 31. Qf5 Rca8 32. Kc2 b1=Q+ 33. Rxb1 Rxd5
+34. Nxf6+ Qxf6 35. Qxf6 Bxf6 36. Rxf6 Ra2+ 37. Rb2 Rd2+ 38. Kxd2 Rxb2+ 39. Kd3
+Rxb3 40. Rxd6 Rb2 41. c4 Rxg2 42. c5 Kf8 43. c6 Ke7 44. Rd7+ Ke6 45. Rd8 1-0
+
+[Event "Budapest FS09 GM"]
+[Site "Budapest"]
+[Date "2024.09.11"]
+[Round "5"]
+[White "Ohanyan, Emin"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "C58"]
+[WhiteElo "2514"]
+[BlackElo "2402"]
+[PlyCount "110"]
+[EventDate "2024.09.07"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "HUN"]
+[EventCategory "6"]
+[SourceTitle "Mega2024 Update 46"]
+[Source "Chessbase"]
+[SourceDate "2024.09.22"]
+[SourceVersion "1"]
+[SourceVersionDate "2024.09.22"]
+[SourceQuality "1"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8.
+Qf3 Be7 9. Bd3 h6 10. Ne4 Nd5 11. Ng3 g6 12. O-O f5 13. Re1 e4 14. Nxe4 fxe4
+15. Bxe4 Rf8 16. Qg3 Kd7 17. Bxd5 cxd5 18. Qxg6 Qb6 19. Qxb6 axb6 20. d4 Bb4
+21. Nd2 Kc6 22. c3 Bd6 23. a4 Bf5 24. b4 Nc4 25. Nxc4 dxc4 26. f3 Rf6 27. Be3
+Bc7 28. Bf2 Bc2 29. Bh4 Rg6 30. b5+ Kd5 31. Re2 Bd3 32. Re7 Bd6 33. Rd7 Bf5 34.
+Rf7 Bc2 35. Re1 Re6 36. Rxe6 Kxe6 37. Rf6+ Kd5 38. Rxh6 Rxa4 39. Rh5+ Ke6 40.
+Rh6+ Kd5 41. Rh5+ Ke6 42. Rh6+ Kd7 43. Bg3 Bxg3 44. hxg3 Ra3 45. g4 Rxc3 46. g5
+Rb3 47. g6 Rxb5 48. g7 Rg5 49. Rxb6 Bh7 50. f4 c3 51. fxg5 c2 52. Rh6 c1=Q+ 53.
+Kh2 Qf4+ 54. Kh1 Bg8 55. Rh8 Bd5 0-1
+
+[Event "Mauricie Open"]
+[Site "Trois-Rivières"]
+[Date "2025.03.23"]
+[Round "4.1"]
+[White "Rodrigue Lemieux, Shawn"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "C47"]
+[WhiteElo "2505"]
+[BlackElo "2365"]
+[PlyCount "106"]
+[EventDate "2025.03.21"]
+[EventType "swiss"]
+[EventRounds "5"]
+[EventCountry "CAN"]
+[SourceVersionDate "2015.05.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8.
+exd5 O-O 9. O-O cxd5 10. h3 c6 11. Qf3 Bd6 12. Bf4 Qc7 13. Ne2 Re8 14. c4 Bxf4
+15. Nxf4 dxc4 16. Be2 Re5 17. Rfd1 g5 18. Nh5 Nxh5 19. Qxh5 Be6 20. Qf3 Rf5 21.
+Qc3 Qe5 22. Bg4 Qxc3 23. bxc3 Rd5 24. Bxe6 fxe6 25. Re1 Rad8 26. Rxe6 Rd1+ 27.
+Rxd1 Rxd1+ 28. Kh2 Rc1 29. Rxc6 Rxc3 30. Ra6 Kf7 31. Rxa7+ Ke6 32. Rxh7 Ra3 33.
+Rh6+ Kd5 34. Rh5 c3 35. Rxg5+ Kd4 36. Rg4+ Kd3 37. h4 Rxa2 38. Rg8 Ra4 39. Rg3+
+Kd2 40. Rxc3 Kxc3 41. Kg3 Ra2 42. h5 Kd4 43. Kf4 Rxf2+ 44. Kg5 Ke5 45. g4 Ke6
+46. Kg6 Ke7 47. g5 Rg2 48. h6 Kf8 49. Kh7 Rxg5 50. Kh8 Kf7 51. h7 Kg6 52. Kg8
+Kh6+ 53. Kh8 Ra5 0-1
+
+[Event "Quebec Open"]
+[Site "Montreal"]
+[Date "2025.07.26"]
+[Round "9.2"]
+[White "Sambuev, Bator"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "C54"]
+[WhiteElo "2413"]
+[BlackElo "2379"]
+[PlyCount "130"]
+[EventDate "2025.07.21"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "CAN"]
+[SourceVersionDate "2015.05.24"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 O-O 6. O-O d6 7. Re1 Bb6 8. a4
+a5 9. h3 Ne7 10. d4 exd4 11. cxd4 d5 12. exd5 Nexd5 13. Bg5 c6 14. Nc3 Qd6 15.
+Re5 Bd8 16. Nxd5 cxd5 17. Bxf6 Bxf6 18. Rxd5 Qb4 19. b3 b6 20. Ne5 Be6 21. Nc6
+Bxd5 22. Nxb4 Bxc4 23. bxc4 axb4 24. Rc1 Rfd8 25. d5 Be7 26. Qb3 Ra7 27. Kf1
+Bc5 28. Rc2 Rda8 29. Ra2 Re8 30. g4 h6 31. Qd3 Rea8 32. Qc2 Re8 33. Ra1 Bd4 34.
+Rd1 Bc5 35. h4 Rea8 36. Ra1 Bd4 37. Ra2 Bc5 38. Kg2 Re8 39. Ra1 Bd4 40. Rd1 Bc5
+41. Kf3 Rea8 42. Ra1 Bd4 43. Ra2 Bc5 44. g5 h5 45. g6 fxg6 46. Qxg6 Rf7+ 47.
+Kg2 Raf8 48. Qd3 Rxf2+ 49. Rxf2 Rxf2+ 50. Kg3 Rf6 51. Qe2 Kf8 52. Qd1 Rg6+ 53.
+Kf3 Rg1 54. Qc2 Rf1+ 55. Ke4 Rf2 56. Qb3 Re2+ 57. Kf4 Rf2+ 58. Kg3 Rf6 59. Qd1
+Bd6+ 60. Kg2 Bc5 61. Qb1 Rf4 62. Kg3 Bd6 63. Kh3 Rf2 64. Qg1 Rh2+ 65. Qxh2 Bxh2
+0-1
+
+[Event "New York Marshall Labor Day-A"]
+[Site "New York"]
+[Date "2025.08.29"]
+[Round "3"]
+[White "Barbosa, Oliver"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "E84"]
+[WhiteElo "2408"]
+[BlackElo "2390"]
+[PlyCount "108"]
+[EventDate "2025.08.28"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "USA"]
+[EventCategory "6"]
+[SourceTitle "Mega2025 Update 44"]
+[Source "Chessbase"]
+[SourceDate "2025.09.05"]
+[SourceVersion "1"]
+[SourceVersionDate "2025.09.05"]
+[SourceQuality "1"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 Nc6 7. Nge2 a6 8. Qd2
+Rb8 9. h4 h5 10. Rc1 Bd7 11. Nd1 Re8 12. Nf2 b5 13. c5 dxc5 14. Rxc5 e5 15. d5
+Ne7 16. Qc1 Bf8 17. Bg5 Nh7 18. Bd2 Nc8 19. Rc2 Nd6 20. b3 b4 21. Nd3 f5 22.
+Nc5 Bc8 23. g3 a5 24. Bg2 Nb5 25. Be3 Bd6 26. O-O Qe7 27. Bf2 Rf8 28. Qd2 Na3
+29. Rcc1 Rb5 30. Na4 Ba6 31. Rfe1 Bc8 32. exf5 gxf5 33. Qh6 Bd7 34. f4 Rf6 35.
+Qxh5 Be8 36. Qf3 e4 37. Qe3 Rxd5 38. g4 Rd3 39. Qa7 e3 40. Bg3 fxg4 41. Qxa5
+Rd2 42. Nc5 Bb5 43. Qxb4 Bxe2 44. Qxa3 Bf3 45. Bxf3 gxf3 46. Qa8+ Rf8 47. Qxf3
+Bxc5 48. Kh1 Kh8 49. f5 Nf6 50. Rc4 Bd4 51. Bxc7 Rf2 52. Qc6 e2 53. Bg3 Rf1+
+54. Kh2 Be5 0-1
+
+[Event "New York Marshall Labor Day-A"]
+[Site "New York"]
+[Date "2025.08.30"]
+[Round "4"]
+[White "Lenderman, Aleksandr"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "E67"]
+[WhiteElo "2455"]
+[BlackElo "2390"]
+[PlyCount "94"]
+[EventDate "2025.08.28"]
+[EventType "tourn"]
+[EventRounds "9"]
+[EventCountry "USA"]
+[EventCategory "6"]
+[SourceTitle "Mega2025 Update 44"]
+[Source "Chessbase"]
+[SourceDate "2025.09.05"]
+[SourceVersion "1"]
+[SourceVersionDate "2025.09.05"]
+[SourceQuality "1"]
+
+1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 O-O 5. Nc3 d6 6. Nf3 Nbd7 7. O-O e5 8. e4
+Re8 9. h3 b6 10. Re1 exd4 11. Nxd4 Bb7 12. f3 c6 13. Be3 a6 14. f4 c5 15. Nb3
+Nxe4 16. Bxe4 Bxe4 17. Qxd6 Bxc3 18. bxc3 Re6 19. Qd2 Qc7 20. Rad1 Nf6 21. Bf2
+Rae8 22. g4 Qc8 23. Bh4 Nxg4 24. hxg4 Rd6 25. Qe2 Bc6 26. Qxe8+ Bxe8 27. Rxe8+
+Qxe8 28. Rxd6 Qe3+ 29. Bf2 Qxf4 30. Rxb6 Qxg4+ 31. Kh2 Qe2 32. Kg1 h5 33. Bxc5
+h4 34. Rd6 Qe1+ 35. Kg2 Qg3+ 36. Kh1 Qh3+ 37. Kg1 Qg3+ 38. Kh1 g5 39. Rd2 Qe1+
+40. Bg1 Qe4+ 41. Kh2 g4 42. Rg2 g3+ 43. Kh3 f5 44. Rd2 Qg4+ 45. Kg2 h3+ 46. Kf1
+Qf4+ 47. Ke1 h2 0-1
+
+[Event "US Masters op"]
+[Site "Charlotte"]
+[Date "2025.11.28"]
+[Round "4"]
+[White "Harsha, Bharathakoti"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "E71"]
+[WhiteElo "2526"]
+[BlackElo "2412"]
+[PlyCount "92"]
+[EventDate "2025.11.26"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "USA"]
+[SourceTitle "Mega2026 Update 05"]
+[Source "Chessbase"]
+[SourceDate "2025.12.04"]
+[SourceVersion "1"]
+[SourceVersionDate "2025.12.04"]
+[SourceQuality "1"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 O-O 6. Be3 Nc6 7. d5 Ne5 8. f4
+Ned7 9. Nge2 c6 10. Ng3 Nb6 11. Be2 cxd5 12. cxd5 e6 13. dxe6 Bxe6 14. O-O Re8
+15. Rf2 Rc8 16. Bd4 Bd7 17. Bf3 Bc6 18. Qd3 Bh6 19. Bg4 Rc7 20. Rd1 Bg7 21. Bf3
+Rce7 22. Kh2 Rd7 23. b4 a6 24. Rfd2 Na4 25. Nxa4 Bxa4 26. Re1 Bh6 27. Be3 d5
+28. e5 d4 29. Bf2 Bb5 30. Qc2 Nd5 31. Bxd5 Rxd5 32. Re4 d3 33. Qd1 f5 34. exf6
+Rxe4 35. Nxe4 Bxf4+ 36. Bg3 Bxd2 37. Qxd2 Qd7 38. Qc3 d2 39. f7+ Qxf7 40. Nxd2
+Rd3 41. Qc2 Ra3 42. Ne4 Bc6 43. Nc3 Qf6 44. Ne4 Qe6 45. Nc3 Qe3 46. Ne2 Qe4 0-1
+
+[Event "US Masters op"]
+[Site "Charlotte"]
+[Date "2025.11.29"]
+[Round "6"]
+[White "Parkhov, Yair"]
+[Black "Sai, Krishna GV"]
+[Result "0-1"]
+[ECO "E73"]
+[WhiteElo "2499"]
+[BlackElo "2412"]
+[PlyCount "84"]
+[EventDate "2025.11.26"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "USA"]
+[SourceTitle "Mega2026 Update 05"]
+[Source "Chessbase"]
+[SourceDate "2025.12.04"]
+[SourceVersion "1"]
+[SourceVersionDate "2025.12.04"]
+[SourceQuality "1"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Be3 a5 7. Nf3 Ng4 8. Bg5
+h6 9. Bh4 Nf6 10. h3 Na6 11. Qc1 a4 12. e5 Nd7 13. exd6 cxd6 14. Nxa4 f5 15.
+O-O f4 16. c5 g5 17. Nxg5 hxg5 18. Bxg5 d5 19. Bf3 Nb4 20. a3 Rxa4 21. Qd1 Rf5
+22. Qxa4 Nc6 23. h4 Nxd4 24. Bg4 Rxg5 25. hxg5 Ne5 26. Bxc8 Qxc8 27. Rfd1 Qg4
+28. Qe8+ Kh7 29. Rxd4 Nf3+ 30. Kf1 Nxd4 31. g6+ Kh6 32. Qg8 Qxg6 33. Rd1 Qh5
+34. Rxd4 Bxd4 35. Qf8+ Kg5 36. Qg8+ Kf6 37. Qf8+ Ke6 38. Kg1 Qd1+ 39. Kh2 Bxf2
+40. Qc8+ Ke5 41. Qh8+ Ke4 42. Qh7+ Ke5 0-1
+
+[Event "Rilton Cup 53rd"]
+[Site "Stockholm"]
+[Date "2025.12.31"]
+[Round "5"]
+[White "Sai, Krishna GV"]
+[Black "Li, Di"]
+[Result "1-0"]
+[ECO "B15"]
+[WhiteElo "2415"]
+[BlackElo "2549"]
+[PlyCount "125"]
+[EventDate "2025.12.27"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "SWE"]
+[SourceTitle "Mega2026 Update 10"]
+[Source "Chessbase"]
+[SourceDate "2026.01.09"]
+[SourceVersion "1"]
+[SourceVersionDate "2026.01.09"]
+[SourceQuality "1"]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 Bd6 7. Bd3 O-O 8.
+Ne2 Re8 9. O-O Nd7 10. Ng3 g6 11. Bh6 Nf8 12. Ne4 Be7 13. Re1 Ne6 14. Qd2 Bd7
+15. h4 Qa5 16. Bc4 b5 17. Bxe6 Bxe6 18. Qf4 Qd8 19. g4 Kh8 20. g5 Bf5 21. gxf6
+Bxf6 22. Nd6 Rxe1+ 23. Rxe1 Qc7 24. Bg5 Bxg5 25. hxg5 Kg8 26. Qe5 Be6 27. Nxf7
+Qxe5 28. Nxe5 Bd5 29. b3 Re8 30. Re3 Kg7 31. c4 Bg8 32. cxb5 cxb5 33. Rc3 Rf8
+34. Rc7+ Kh8 35. Ng4 Rf5 36. Rc5 a5 37. Nf6 Be6 38. Rxf5 Bxf5 39. a3 b4 40.
+axb4 axb4 41. Nd5 Be6 42. Nxb4 Bxb3 43. d5 Kg7 44. d6 Kf7 45. Nd3 Ke6 46. Nc5+
+Kxd6 47. Nxb3 Ke5 48. Kg2 Kf4 49. Nd4 Kxg5 50. Kg3 h6 51. f4+ Kf6 52. Kg4 Ke7
+53. Kf3 Kd7 54. Ke4 Kd6 55. Nf3 Ke6 56. Ne5 Kf6 57. Ng4+ Kg7 58. Ke5 h5 59. Nh2
+h4 60. Ng4 Kf7 61. Nf2 Kg7 62. Nh3 Kh6 63. Ke4 1-0
+
+[Event "Rilton Cup 53rd"]
+[Site "Stockholm"]
+[Date "2026.01.03"]
+[Round "7"]
+[White "Sai, Krishna GV"]
+[Black "Blomqvist, Erik"]
+[Result "1-0"]
+[ECO "C60"]
+[WhiteElo "2415"]
+[BlackElo "2490"]
+[PlyCount "95"]
+[EventDate "2025.12.27"]
+[EventType "swiss"]
+[EventRounds "9"]
+[EventCountry "SWE"]
+[SourceTitle "Mega2026 Update 10"]
+[Source "Chessbase"]
+[SourceDate "2026.01.09"]
+[SourceVersion "1"]
+[SourceVersionDate "2026.01.09"]
+[SourceQuality "1"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 g6 4. c3 Bg7 5. d4 exd4 6. cxd4 a6 7. Ba4 b5 8. Bc2
+d5 9. exd5 Nce7 10. Nc3 Nf6 11. O-O O-O 12. Bg5 Qd6 13. a4 Bb7 14. axb5 axb5
+15. Nxb5 Qb6 16. Nc3 Qxb2 17. Na4 Qb5 18. Re1 Bxd5 19. Ne5 Rfe8 20. Rb1 Qa5 21.
+Nc5 Nc6 22. Bd2 Qa3 23. Ba4 Nxe5 24. Bxe8 Nf3+ 25. gxf3 Nxe8 26. Re3 Qa7 27.
+Bc3 Nd6 28. Ra1 Qb8 29. Rxa8 Qxa8 30. Qa4 Qb8 31. Ne4 Nb5 32. Bb2 c6 33. Nc3
+Be6 34. Nxb5 cxb5 35. Qb4 Bf8 36. Qc3 b4 37. Qc6 Bh3 38. Re8 Qf4 39. Qc5 Qh6
+40. Qe5 Qd2 41. d5 Qd1+ 42. Qe1 Qxd5 43. Bf6 Qd7 44. Rd8 Qc7 45. Be7 b3 46.
+Rxf8+ Kg7 47. Qa1+ Kh6 48. Rxf7 1-0
+
