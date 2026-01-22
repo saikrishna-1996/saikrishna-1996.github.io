@@ -34,7 +34,7 @@
 
   #chess-info {
     flex: 1;
-    min-width: 0; // Allow flex item to shrink below content size
+    min-width: 450px; // Ensure enough space for text to display properly
 
     #game-header {
       background-color: $lighter-gray;
@@ -46,11 +46,15 @@
         margin-top: 0;
         margin-bottom: $space-1;
         color: $theme-color;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
       }
 
       p {
         margin: $space-1 0;
         font-size: $small-font-size;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
       }
     }
 
@@ -116,6 +120,7 @@
   #chessboard-container {
     flex-shrink: 0; // Don't shrink the board
     text-align: center;
+    width: 480px; // Fixed width for board
 
     #board {
       margin: 0 auto $space-2;
@@ -183,12 +188,14 @@
   #chess-container {
     #chess-main-layout {
       #chess-info {
+        min-width: 0; // Allow shrinking on mobile
         #move-list-container {
           max-height: 300px;
         }
       }
 
       #chessboard-container {
+        width: 100%;
         #board {
           width: 100% !important;
           max-width: 400px;
