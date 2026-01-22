@@ -1,6 +1,6 @@
 ---
 layout: page
-title: travel
+title: Travel
 permalink: /travel/
 description: Adventures and memories from around the world
 ---
