@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /chess/
-title: Best Chess Games
+title: My Best Games
 description: A collection of my best games against Grandmasters and International Masters
 ---
 
